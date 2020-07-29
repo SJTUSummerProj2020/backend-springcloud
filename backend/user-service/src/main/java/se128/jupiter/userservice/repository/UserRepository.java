@@ -1,9 +1,10 @@
 package se128.jupiter.userservice.repository;
 
-import entity.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import se128.jupiter.userservice.entity.User;
 
 public interface UserRepository extends JpaRepository<User,Integer> {
 

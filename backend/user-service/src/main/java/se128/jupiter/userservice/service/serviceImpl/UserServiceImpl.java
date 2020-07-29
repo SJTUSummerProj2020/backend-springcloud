@@ -1,15 +1,16 @@
 package se128.jupiter.userservice.service.serviceImpl;
 
-import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se128.jupiter.userservice.dao.UserDao;
+import se128.jupiter.userservice.entity.User;
 import se128.jupiter.userservice.service.UserService;
 
 import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
+
     private final UserDao userDao;
 
     @Autowired

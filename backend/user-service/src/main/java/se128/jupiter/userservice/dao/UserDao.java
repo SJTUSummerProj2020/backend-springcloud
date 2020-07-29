@@ -1,7 +1,6 @@
 package se128.jupiter.userservice.dao;
 
-import entity.Order;
-import entity.User;
+import se128.jupiter.userservice.entity.User;
 
 import java.util.List;
 

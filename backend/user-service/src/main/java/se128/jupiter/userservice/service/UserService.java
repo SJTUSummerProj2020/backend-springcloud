@@ -1,6 +1,7 @@
 package se128.jupiter.userservice.service;
 
-import entity.User;
+
+import se128.jupiter.userservice.entity.User;
 
 import java.util.List;
 

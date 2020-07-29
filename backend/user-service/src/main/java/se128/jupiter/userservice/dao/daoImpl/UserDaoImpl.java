@@ -1,9 +1,9 @@
 package se128.jupiter.userservice.dao.daoImpl;
 
-import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import se128.jupiter.userservice.dao.UserDao;
+import se128.jupiter.userservice.entity.User;
 import se128.jupiter.userservice.repository.UserRepository;
 
 import java.util.List;

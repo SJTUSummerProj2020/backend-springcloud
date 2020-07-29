@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/jupiter</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="jupiter@localhost" uuid="dc8002fe-fd33-4ca6-a384-91dd447d5bfe">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/jupiter</jdbc-url>
+    </data-source>
   </component>
 </project>
