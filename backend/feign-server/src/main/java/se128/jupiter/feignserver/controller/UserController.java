@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import se128.jupiter.feignserver.service.UserService;
+import util.msgutils.Msg;
 
 @RestController
 @RequestMapping("/user")
