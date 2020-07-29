@@ -10,18 +10,24 @@
         <module name="user-service" />
         <module name="common" />
         <module name="eureka-server" />
+        <module name="goods-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="eureka-client" target="1.8" />
+      <module name="backend" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="feign-server" target="1.8" />
+      <module name="goods-service" target="1.8" />
+      <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
-      <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign-server" options="-parameters" />
+      <module name="goods-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
