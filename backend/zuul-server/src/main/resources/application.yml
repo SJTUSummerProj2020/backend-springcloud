@@ -2,7 +2,7 @@ server:
   port: 8802
 spring:
   application:
-    name: cloud-zuul
+    name: zuul-server
 eureka:
   client:
     service-url:
@@ -13,7 +13,7 @@ management:
       exposure:
         include: health,info,hysrix,stream,routes
 zuul:
-  prefix: /api
+#  prefix: /api
   routes:
     user-service: /user/**
     goods-service: /goods/**

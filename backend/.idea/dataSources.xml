@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mysql_local" uuid="7aebc999-e589-444f-bb57-25afb481c279">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/jupiter</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="jupiter@localhost" uuid="dc8002fe-fd33-4ca6-a384-91dd447d5bfe">
+    <data-source source="LOCAL" name="jupiter@localhost" uuid="f7598bba-4299-4efc-8c93-518126114932">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

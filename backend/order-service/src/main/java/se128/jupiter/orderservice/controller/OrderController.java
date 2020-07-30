@@ -17,7 +17,6 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping(value = "/order")
 @RestController
 public class OrderController {
     private final OrderService orderService;

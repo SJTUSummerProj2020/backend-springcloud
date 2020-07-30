@@ -1,9 +1,8 @@
 package se128.jupiter.goodsservice.service.serviceImpl;
 
-import entity.Auction;
-import entity.Goods;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
+import se128.jupiter.goodsservice.entity.Goods;
 import se128.jupiter.goodsservice.service.GoodsService;
 
 import java.util.List;
@@ -61,21 +60,6 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<Auction> getAllAuctions() {
-        return null;
-    }
-
-    @Override
-    public Auction getAuctionByAuctionId(Integer auctionId) {
-        return null;
-    }
-
-    @Override
-    public Auction updateAuction(Integer auctionId, Integer userId, Double offer) {
-        return null;
-    }
-
-    @Override
     public List<Goods> getRecommendGoodsByUserId(Integer userId, Integer number) {
         return null;
     }
@@ -87,16 +71,5 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public void deleteAuctionByAuctionId(Integer auctionId) {
-
-    }
-
-    @Override
-    public Auction editAuction(Auction auction, Integer detailId, Integer goodsId) {
-        return null;
-    }
-
-    @Override
-    public Auction addAuction(Auction auction, Integer goodsId, Integer detailId) {
-        return null;
     }
 }

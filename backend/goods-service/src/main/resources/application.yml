@@ -1,9 +1,19 @@
 server:
-  port: 8763
+  port: 8805
 
 spring:
   application:
     name: goods-service
+  datasource:
+    url: jdbc:mysql://localhost/jupiter?zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      max-active: 20
+  jpa:
+    database: mysql
+    show-sql: false
 
 eureka:
   client:

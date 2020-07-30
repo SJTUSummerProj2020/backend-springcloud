@@ -13,7 +13,7 @@ import util.constant.Constant;
 import util.msgutils.Msg;
 
 @RestController
-@RequestMapping("/goods")
+
 public class GoodsController {
     private final GoodsService goodsService;
     private static final Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
@@ -25,7 +25,7 @@ public class GoodsController {
 
     @GetMapping
     public Msg getAllGoods(@RequestParam(value= Constant.PAGE_ID) String pageId){
-
+        return null;
     }
 
 }

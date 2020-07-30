@@ -1,10 +1,10 @@
 package se128.jupiter.goodsservice.repository;
 
-import entity.Goods;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import se128.jupiter.goodsservice.entity.Goods;
 
 import java.util.List;
 

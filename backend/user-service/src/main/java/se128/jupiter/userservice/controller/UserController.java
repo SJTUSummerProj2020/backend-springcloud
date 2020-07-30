@@ -15,7 +15,6 @@ import util.msgutils.MsgUtil;
 
 import java.util.List;
 
-@RequestMapping(value = "/user")
 @RestController
 public class UserController {
 

@@ -1,10 +1,10 @@
 package se128.jupiter.goodsservice.dao.daoImpl;
 
-import entity.Goods;
-import entity.GoodsDetail;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Repository;
 import se128.jupiter.goodsservice.dao.GoodsDao;
+import se128.jupiter.goodsservice.entity.Goods;
+import se128.jupiter.goodsservice.entity.GoodsDetail;
 
 import java.util.HashMap;
 import java.util.List;

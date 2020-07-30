@@ -1,8 +1,8 @@
 package se128.jupiter.goodsservice.dao;
 
-import entity.Goods;
-import entity.GoodsDetail;
 import org.springframework.data.domain.Page;
+import se128.jupiter.goodsservice.entity.Goods;
+import se128.jupiter.goodsservice.entity.GoodsDetail;
 
 import java.util.HashMap;
 import java.util.List;

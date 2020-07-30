@@ -2,9 +2,8 @@ package se128.jupiter.goodsservice.service;
 
 import java.util.List;
 
-import entity.Auction;
-import entity.Goods;
 import org.springframework.data.domain.Page;
+import se128.jupiter.goodsservice.entity.Goods;
 
 public interface GoodsService {
     Goods getGoodsByGoodsId(Integer goodsId);
@@ -27,21 +26,11 @@ public interface GoodsService {
 
     List<Goods> getPopularGoods(Integer number, Integer goodsType);
 
-    List<Auction> getAllAuctions();
-
-    Auction getAuctionByAuctionId(Integer auctionId);
-
-    Auction updateAuction(Integer auctionId, Integer userId, Double offer);
-
     List<Goods> getRecommendGoodsByUserId(Integer userId, Integer number);
 
     List<Goods> getRecommendGoodsInAll(Integer number);
 
 
     void deleteAuctionByAuctionId(Integer auctionId);
-
-    Auction editAuction(Auction auction, Integer detailId, Integer goodsId);
-
-    Auction addAuction(Auction auction, Integer goodsId, Integer detailId);
 
 }
