@@ -1,12 +1,8 @@
 package se128.jupiter.userservice.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import entity.Order;
 import lombok.Data;
-
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @Entity
@@ -15,13 +11,15 @@ import java.util.List;
 public class User {
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "user_id",nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
 
+    @Basic
     @Column(name = "user_name")
     private String username;
 
+    @Basic
     @Column(name = "password")
     private String password;
 

@@ -15,8 +15,8 @@ import util.msgutils.MsgUtil;
 
 import java.util.List;
 
+@RequestMapping(value = "/user")
 @RestController
-@RequestMapping("/user")
 public class UserController {
 
     private final UserService userService;
@@ -27,7 +27,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
+    @RequestMapping(method = RequestMethod.GET)
     public Msg getAllUser()
     {
         logger.info("getAllUsers");

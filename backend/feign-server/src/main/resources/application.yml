@@ -7,3 +7,17 @@ server:
 spring:
   application:
     name: feign-server
+  datasource:
+    url: jdbc:mysql://localhost/jupiter?zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      max-active: 20
+  jpa:
+    database: mysql
+    show-sql: false
+
+feign:
+  hystrix:
+        enabled: true

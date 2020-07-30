@@ -2,50 +2,60 @@ package se128.jupiter.userservice.service.serviceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import se128.jupiter.userservice.dao.UserDao;
 import se128.jupiter.userservice.entity.User;
+import se128.jupiter.userservice.repository.UserRepository;
 import se128.jupiter.userservice.service.UserService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserDao userDao;
+    private final UserRepository userRepository;
 
     @Autowired
-    public UserServiceImpl(UserDao userDao) {
-        this.userDao = userDao;
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
 
     @Override
     public User getUserByUserId(Integer userId) {
-        return userDao.getUserByUserId(userId);
+        Optional<User> user = userRepository.findById(userId);
+        return user.orElse(null);
     }
 
     @Override
     public User getUserByUsernameAndPassword(String username, String password) {
-        return userDao.getUserByUsernameAndPassword(username, password);
+        return userRepository.getUserByUsernameAndPassword(username, password);
     }
 
     @Override
     public User addUser(User user) {
-        return userDao.addUser(user);
+        return userRepository.saveAndFlush(user);
     }
 
     @Override
     public List<User> getAllUsers() {
-        return userDao.getAllUsers();
+        return userRepository.findAll();
     }
 
     @Override
     public User changeUserStatusByUserId(Integer userId) {
-        return userDao.changeUserStatusByUserId(userId);
+        Optional<User> user = userRepository.findById(userId);
+        if(user.isPresent())
+        {
+            user.get().setUserType(-user.get().getUserType());
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
     }
 
     @Override
     public User editUser(User user) {
-        return userDao.editUser(user);
+        return userRepository.saveAndFlush(user);
     }
 }

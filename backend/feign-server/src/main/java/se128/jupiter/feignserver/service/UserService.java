@@ -7,6 +7,6 @@ import util.msgutils.Msg;
 @FeignClient(value = "user-service")
 public interface UserService {
 
-    @GetMapping
+    @GetMapping("/user")
     Msg getAllUser();
 }
