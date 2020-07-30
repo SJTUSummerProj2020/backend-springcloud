@@ -1,15 +1,16 @@
-package se128.jupiter.goodsservice.service.serviceImpl;
+package se128.jupiter.goodsservice.dao.daoImpl;
 
-import entity.Auction;
 import entity.Goods;
+import entity.GoodsDetail;
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Service;
-import se128.jupiter.goodsservice.service.GoodsService;
+import org.springframework.stereotype.Repository;
+import se128.jupiter.goodsservice.dao.GoodsDao;
 
+import java.util.HashMap;
 import java.util.List;
 
-@Service
-public class GoodsServiceImpl implements GoodsService {
+@Repository
+public class GoodsDaoImpl implements GoodsDao {
     @Override
     public Goods getGoodsByGoodsId(Integer goodsId) {
         return null;
@@ -41,7 +42,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<Goods> getGoodsByPageId(Integer pageId) {
+    public List<Goods> getGoodsByPage(Integer pageId) {
         return null;
     }
 
@@ -51,7 +52,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public void saveViewCounter() {
+    public void saveViewCounter(HashMap<Integer, Integer> goodsViewCounter) {
 
     }
 
@@ -61,22 +62,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<Auction> getAllAuctions() {
-        return null;
-    }
-
-    @Override
-    public Auction getAuctionByAuctionId(Integer auctionId) {
-        return null;
-    }
-
-    @Override
-    public Auction updateAuction(Integer auctionId, Integer userId, Double offer) {
-        return null;
-    }
-
-    @Override
-    public List<Goods> getRecommendGoodsByUserId(Integer userId, Integer number) {
+    public List<Goods> getRecommendGoodsByGoodsType(Integer favor, Integer number) {
         return null;
     }
 
@@ -86,17 +72,7 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public void deleteAuctionByAuctionId(Integer auctionId) {
-
-    }
-
-    @Override
-    public Auction editAuction(Auction auction, Integer detailId, Integer goodsId) {
-        return null;
-    }
-
-    @Override
-    public Auction addAuction(Auction auction, Integer goodsId, Integer detailId) {
+    public GoodsDetail getGoodsDetailByDetailId(Integer detailId) {
         return null;
     }
 }
