@@ -40,7 +40,7 @@ public class UserController {
     public Msg getUserById(@PathVariable String id)
     {
         logger.info("getUserById = " + id);
-        User user = userService.getUserByUserId(id);
+        User user = userService.getUserByUserId(Integer.parseInt(id));
         JSONObject data = JSONObject.fromObject(user);
         return MsgUtil.makeMsg(MsgCode.SUCCESS, data);
     }

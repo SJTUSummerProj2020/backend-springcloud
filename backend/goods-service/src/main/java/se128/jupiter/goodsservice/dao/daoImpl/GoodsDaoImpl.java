@@ -3,11 +3,13 @@ package se128.jupiter.goodsservice.dao.daoImpl;
 import entity.Goods;
 import entity.GoodsDetail;
 import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Repository;
 import se128.jupiter.goodsservice.dao.GoodsDao;
 
 import java.util.HashMap;
 import java.util.List;
 
+@Repository
 public class GoodsDaoImpl implements GoodsDao {
     @Override
     public Goods getGoodsByGoodsId(Integer goodsId) {

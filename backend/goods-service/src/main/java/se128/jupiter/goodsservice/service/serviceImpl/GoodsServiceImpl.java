@@ -3,10 +3,12 @@ package se128.jupiter.goodsservice.service.serviceImpl;
 import entity.Auction;
 import entity.Goods;
 import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
 import se128.jupiter.goodsservice.service.GoodsService;
 
 import java.util.List;
 
+@Service
 public class GoodsServiceImpl implements GoodsService {
     @Override
     public Goods getGoodsByGoodsId(Integer goodsId) {
