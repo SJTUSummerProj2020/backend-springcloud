@@ -26,7 +26,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public Msg getAllUser()
     {
         logger.info("getAllUsers");
