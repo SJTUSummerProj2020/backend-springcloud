@@ -1,20 +1,28 @@
 server:
-  port: 8802
+  port: 8803
 spring:
   application:
     name: zuul-server
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8801/eureka/
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
 management:
   endpoints:
     web:
       exposure:
         include: health,info,hysrix,stream,routes
 zuul:
-#  prefix: /api
+  prefix: /api
   routes:
-    user-service: /user/**
-    goods-service: /goods/**
-    order-service: /order/**
+    user-service: /myuser/**
+    goods-service: /mygoods/**
+    order-service: /myorder/**
+    user-center: /usercenter/**
+ribbon:
+  eureka:
+    enabled: true
+

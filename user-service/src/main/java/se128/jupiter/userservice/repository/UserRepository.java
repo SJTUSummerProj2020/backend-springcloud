@@ -1,17 +1,17 @@
 package se128.jupiter.userservice.repository;
 
-
+import se128.jupiter.userservice.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import se128.jupiter.userservice.entity.User;
+//import org.springframework.data.jpa.repository.Query;
+//import org.springframework.data.repository.query.Param;
 
-public interface UserRepository extends JpaRepository<User,Integer> {
 
-    @Query(value = "from User where username = :username and password = :password")
-    User getUserByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+public interface UserRepository extends JpaRepository<UserEntity, String> {
 
-    User getUserByUserId(Integer userId);
-
-    User getUserByUsername(String username);
+//    @Query(value = "from UserEntity where username = :username and password = :password")
+//    UserEntity getUserByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+//
+//    UserEntity getUserByUserId(Integer userId);
+//
+//    UserEntity getUserByUsername(String username);
 }

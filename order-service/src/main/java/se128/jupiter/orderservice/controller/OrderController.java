@@ -1,43 +1,35 @@
 package se128.jupiter.orderservice.controller;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import se128.jupiter.orderservice.entity.Order;
-import se128.jupiter.orderservice.service.OrderService;
-import util.constant.Constant;
-import util.msgutils.Msg;
-import util.msgutils.MsgCode;
-import util.msgutils.MsgUtil;
+import se128.jupiter.orderservice.entity.COrderEntity;
+import se128.jupiter.orderservice.service.OrderServiceImpl;
 
-import java.sql.Timestamp;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 public class OrderController {
-    private final OrderService orderService;
-    private  static final Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
-
-    @Autowired
-    public OrderController(OrderService orderService) {
-        this.orderService = orderService;
-    }
-
-    @RequestMapping(method = RequestMethod.GET)
-    public Msg getAllOrder()
-    {
-        logger.info("getAllOrders");
-        List<Order> orders = orderService.getAllOrders();
-        JSONObject data = new JSONObject();
-        JSONArray orderList = JSONArray.fromObject(orders);
-        data.put("orders", orderList.toString());
-        return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
-    }
-
+    //    private final OrderService orderService;
+//    private  static final Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
+//
+//    @Autowired
+//    public OrderController(OrderService orderService) {
+//        this.orderService = orderService;
+//    }
+//
+//    @RequestMapping(method = RequestMethod.GET)
+//    public Msg getAllOrder()
+//    {
+//        logger.info("getAllOrders");
+//        List<COrderEntity> COrderEntities = orderService.getAllOrders();
+//        JSONObject data = new JSONObject();
+//        JSONArray orderList = JSONArray.fromObject(COrderEntities);
+//        data.put("COrderEntities", orderList.toString());
+//        return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+//    }
+//
 //    @PostMapping
 //    @RequestMapping("/addOrder")
 //    public Msg addOrder(@RequestBody Map<String, String> params) {
@@ -72,15 +64,31 @@ public class OrderController {
 //        JSONObject data = JSONObject.fromObject(order1);
 //        return MsgUtil.makeMsg(MsgCode.ADD_SUCCESS, MsgUtil.BUY_SUCCESS_MSG, data);
 //    }
+//
+//    @GetMapping("/{id}")
+//    public Msg getOrderById(@PathVariable Integer id)
+//    {
+//        logger.info("getUserById = " + id);
+//        COrderEntity COrderEntity =orderService.getOrderById(id);
+//        JSONObject data = JSONObject.fromObject(COrderEntity);
+//        return MsgUtil.makeMsg(MsgCode.SUCCESS, data);
+//    }
+    @Autowired
+    private OrderServiceImpl orderService;
 
-    @GetMapping("/{id}")
-    public Msg getOrderById(@PathVariable Integer id)
-    {
-        logger.info("getUserById = " + id);
-        Order order =orderService.getOrderById(id);
-        JSONObject data = JSONObject.fromObject(order);
-        return MsgUtil.makeMsg(MsgCode.SUCCESS, data);
+    @GetMapping("{id}")
+    public COrderEntity getOrder(@PathVariable String id) {
+        return orderService.getOrder(id);
     }
 
+    @PostMapping
+    public COrderEntity saveOrder(@RequestBody COrderEntity COrderEntity) {
+        return orderService.saveOrder(COrderEntity);
+    }
+
+    @GetMapping("userOrderList/{userId}")
+    public List<COrderEntity> getOrderListByUser(@PathVariable String userId){
+        return orderService.getOrderListByUser(userId);
+    }
 
 }

@@ -1,0 +1,12 @@
+server:
+  port: 8804
+spring:
+  application:
+    name: turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+turbine:
+  app-config: user-center
+  cluster-name-expression: "'default'"

@@ -1,0 +1,55 @@
+#server:
+#  port: 8881
+#
+##spring:
+##  application:
+##    name: user-service
+##  datasource:
+##    url: jdbc:mysql://localhost/jupiter?zeroDateTimeBehavior=CONVERT_TO_NULL
+##    username: root
+##    password: root
+##    driver-class-name: com.mysql.cj.jdbc.Driver
+##    tomcat:
+##      max-active: 20
+##  jpa:
+##    database: mysql
+##    show-sql: false
+##
+##eureka:
+##  client:
+##    serviceUrl:
+##      defaultZone: http://localhost:8761/eureka/
+#spring:
+#  datasource:
+#    name: MysqlDataSource
+#    type: com.mysql.cj.jdbc.MysqlDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost/jupiter_cloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: root
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#  application:
+#    name: user-service
+##服务注册地址配置
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8801/eureka/
+#  instance:
+#    prefer-ip-address: true
+#
+#ribbon:
+#  eureka:
+#    enabled: true
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8805
+      label: master
+      profile: dev
+  application:
+    name: user-service

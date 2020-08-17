@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8805
+      label: master
+      profile: dev
+  application:
+    name: order-service
