@@ -7,6 +7,7 @@
         <groupId>se128.jupiter</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <artifactId>turbine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>turbine</name>
