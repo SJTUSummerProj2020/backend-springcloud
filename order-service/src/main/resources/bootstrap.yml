@@ -2,8 +2,21 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:8805
       label: master
       profile: dev
+      discovery:
+        enabled: true
+        service-id: config
   application:
     name: order-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+  instance:
+    prefer-ip-address: true

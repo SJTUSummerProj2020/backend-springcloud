@@ -1,5 +1,7 @@
 package se128.jupiter.userservice.controller;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import se128.jupiter.userservice.entity.UserEntity;
 import se128.jupiter.userservice.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@RefreshScope
 public class UserController {
 
     @Autowired
@@ -65,6 +68,13 @@ public class UserController {
     @PostMapping
     public UserEntity saveUser(@RequestBody UserEntity userEntity) {
         return userService.saveUser(userEntity);
+    }
+
+    @Value("${envName}")
+    private String envName;
+    @GetMapping("getEnvName")
+    public String getEnvName(){
+        return envName;
     }
 
 }

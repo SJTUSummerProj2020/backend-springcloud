@@ -3,6 +3,8 @@ package se128.jupiter.orderservice.controller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 import se128.jupiter.orderservice.entity.COrderEntity;
 import se128.jupiter.orderservice.service.OrderServiceImpl;
@@ -10,6 +12,7 @@ import se128.jupiter.orderservice.service.OrderServiceImpl;
 import java.util.List;
 
 @RestController
+@RefreshScope
 public class OrderController {
     //    private final OrderService orderService;
 //    private  static final Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
@@ -89,6 +92,13 @@ public class OrderController {
     @GetMapping("userOrderList/{userId}")
     public List<COrderEntity> getOrderListByUser(@PathVariable String userId){
         return orderService.getOrderListByUser(userId);
+    }
+
+    @Value("${envName")
+    private String envName;
+    @GetMapping("getEnvName")
+    public String getEnvName(){
+        return envName;
     }
 
 }
