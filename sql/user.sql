@@ -36,7 +36,7 @@ CREATE TABLE `user`  (
   `buy5` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`user_id`) USING BTREE,
   UNIQUE INDEX `user_name_index`(`user_name`) USING BTREE COMMENT 'user_name的index'
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of user

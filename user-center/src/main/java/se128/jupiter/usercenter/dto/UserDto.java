@@ -1,78 +1,101 @@
 package se128.jupiter.usercenter.dto;
 
-import java.sql.Timestamp;
-
 public class UserDto {
-    private String id;
-    private String userName;
-    private String nickName;
-    private String userPswd;
-    private Timestamp createDate;
-    private String createBy;
-    private Timestamp updateDate;
-    private String updateBy;
 
-    public String getId() {
-        return id;
+    private Integer userId;
+    private String username;
+    private String nickname;
+    private String password;
+    private String phone;
+    private Integer userType = 1;
+    private Integer buy0 = 0;
+    private Integer buy1 = 0;
+    private Integer buy2 = 0;
+    private Integer buy3 = 0;
+    private Integer buy4 = 0;
+    private Integer buy5 = 0;
+
+    public Integer getUserId() {
+        return this.userId;
+    }
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getUsername() {
+        return this.username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getNickname() {
+        return nickname;
+    }
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public String getPassword() {
+        return this.password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getNickName() {
-        return nickName;
+    public Integer getUserType() {
+        return this.userType;
+    }
+    public void setUserType(Integer userType) {
+        this.userType = userType;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getUserPswd() {
-        return userPswd;
+    public Integer getBuy0() {
+        return buy0;
+    }
+    public void setBuy0(Integer buy0) {
+        this.buy0 = buy0;
     }
 
-    public void setUserPswd(String userPswd) {
-        this.userPswd = userPswd;
+    public Integer getBuy1() {
+        return buy1;
+    }
+    public void setBuy1(Integer buy1) {
+        this.buy1 = buy1;
     }
 
-    public Timestamp getCreateDate() {
-        return createDate;
+    public Integer getBuy2() {
+        return buy2;
+    }
+    public void setBuy2(Integer buy2) {
+        this.buy2 = buy2;
     }
 
-    public void setCreateDate(Timestamp createDate) {
-        this.createDate = createDate;
+    public Integer getBuy3() {
+        return buy3;
+    }
+    public void setBuy3(Integer buy3) {
+        this.buy3 = buy3;
     }
 
-    public String getCreateBy() {
-        return createBy;
+    public Integer getBuy4() {
+        return buy4;
+    }
+    public void setBuy4(Integer buy4) {
+        this.buy4 = buy4;
     }
 
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
+    public Integer getBuy5() {
+        return buy5;
     }
-
-    public Timestamp getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Timestamp updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
+    public void setBuy5(Integer buy5) {
+        this.buy5 = buy5;
     }
 }

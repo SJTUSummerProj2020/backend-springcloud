@@ -53,14 +53,65 @@ public class UserServiceImpl {
     }
 
     public UserEntity editUser(UserEntity userEntity) {
-        return userRepository.saveAndFlush(userEntity);
+        Optional<UserEntity> user = userRepository.findById(userEntity.getUserId());
+        if(user.isPresent())
+        {
+            user.get().setNickname(userEntity.getNickname());
+            user.get().setPhone(userEntity.getPhone());
+            user.get().setPassword(userEntity.getPassword());
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
     }
 
 
-    public UserEntity login(UserEntity userEntity) {
-        String username = userEntity.getUsername();
-        String password = userEntity.getPassword();
-        UserEntity user1 = userRepository.getUserByUsernameAndPassword(username, password);
-        return user1;
+    public UserEntity checkUser(String username,String password) {
+        return userRepository.getUserByUsernameAndPassword(username, password);
+    }
+
+    public UserEntity banUser(Integer id) {
+        Optional<UserEntity> user = userRepository.findById(id);
+        if(user.isPresent())
+        {
+            user.get().setUserType(-1);
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
+    }
+
+    public UserEntity unbanUser(Integer id) {
+        Optional<UserEntity> user = userRepository.findById(id);
+        if(user.isPresent())
+        {
+            user.get().setUserType(1);
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
+    }
+
+    public UserEntity addBuy(Integer id, Integer goodsType) {
+        Optional<UserEntity> user = userRepository.findById(id);
+        if(user.isPresent())
+        {
+            switch (goodsType)
+            {
+                case 0:user.get().setBuy0(user.get().getBuy0()+1);break;
+                case 1:user.get().setBuy1(user.get().getBuy1()+1);break;
+                case 2:user.get().setBuy2(user.get().getBuy2()+1);break;
+                case 3:user.get().setBuy3(user.get().getBuy3()+1);break;
+                case 4:user.get().setBuy4(user.get().getBuy4()+1);break;
+                case 5:user.get().setBuy5(user.get().getBuy5()+1);break;
+            }
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
     }
 }

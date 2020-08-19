@@ -14,13 +14,13 @@ public class UserEntity {
     private String nickname;
     private String password;
     private String phone;
-    private Integer userType;
-    private Integer buy0;
-    private Integer buy1;
-    private Integer buy2;
-    private Integer buy3;
-    private Integer buy4;
-    private Integer buy5;
+    private Integer userType = 1;
+    private Integer buy0 = 0;
+    private Integer buy1 = 0;
+    private Integer buy2 = 0;
+    private Integer buy3 = 0;
+    private Integer buy4 = 0;
+    private Integer buy5 = 0;
 
     @Id
     @Column(name = "user_id")

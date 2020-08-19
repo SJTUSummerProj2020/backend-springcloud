@@ -1,97 +1,82 @@
 package se128.jupiter.usercenter.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.sql.Timestamp;
 
 public class OrderDto {
 
-    private String id;
-    private String orderNo;
-    private String orderStatus;
-    private Timestamp finishDate;
-    private Timestamp deleteDate;
-    private Timestamp createDate;
-    private String createBy;
-    private Timestamp updateDate;
-    private String updateBy;
-    private double amount;
+    private Integer orderId;
+    private Integer userId;
+    private Integer detailId;
+    private Integer goodsId;
+    private String sourceId = "DAMAI1010232108810";
+    private String orderStatus = "0";
+    private Integer number;
+    private Double price;
+    private Timestamp time;
 
-    public String getId() {
-        return id;
+    public Integer getOrderId() {
+        return orderId;
+    }
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public Integer getUserId() {
+        return userId;
+    }
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getOrderNo() {
-        return orderNo;
+    public Integer getDetailId() {
+        return detailId;
+    }
+    public void setDetailId(Integer detailId) {
+        this.detailId = detailId;
     }
 
-    public void setOrderNo(String orderNo) {
-        this.orderNo = orderNo;
+    public Integer getGoodsId() {
+        return goodsId;
+    }
+    public void setGoodsId(Integer goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getSourceId() {
+        return sourceId;
+    }
+    public void setSourceId(String sourceId) {
+        this.sourceId = sourceId;
     }
 
     public String getOrderStatus() {
         return orderStatus;
     }
-
     public void setOrderStatus(String orderStatus) {
         this.orderStatus = orderStatus;
     }
 
-    public Timestamp getFinishDate() {
-        return finishDate;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    public Timestamp getTime() {
+        return time;
     }
-
-    public void setFinishDate(Timestamp finishDate) {
-        this.finishDate = finishDate;
-    }
-
-    public Timestamp getDeleteDate() {
-        return deleteDate;
-    }
-
-    public void setDeleteDate(Timestamp deleteDate) {
-        this.deleteDate = deleteDate;
-    }
-
-    public Timestamp getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Timestamp createDate) {
-        this.createDate = createDate;
-    }
-
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-
-    public Timestamp getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Timestamp updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setTime(Timestamp time) {
+        this.time = time;
     }
 }

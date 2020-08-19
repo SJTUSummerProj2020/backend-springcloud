@@ -33,7 +33,7 @@ public class OrderServiceImpl {
 //        Optional<COrderEntity> order = orderRepository.findById(id);
 //        return order.orElse(null);
 //    }
-    public COrderEntity getOrder(String id) {
+    public COrderEntity getOrder(Integer id) {
         if (!orderRepository.existsById(id)) {
             return null;
         }
@@ -41,12 +41,15 @@ public class OrderServiceImpl {
     }
 
     public COrderEntity saveOrder(COrderEntity COrderEntity) {
-        COrderEntity.setOrderNo(String.valueOf(System.currentTimeMillis()));
+        COrderEntity.setSourceId(String.valueOf(System.currentTimeMillis()));
         return orderRepository.save(COrderEntity);
     }
 
-    public List<COrderEntity> getOrderListByUser(String userId){
-        return orderRepository.findByCreateByOrderByCreateDate(userId);
+    public List<COrderEntity> getOrderListByUser(Integer userId){
+        return orderRepository.findByUserId(userId);
     }
 
+    public List<COrderEntity> getAllOrder() {
+        return orderRepository.findAll();
+    }
 }

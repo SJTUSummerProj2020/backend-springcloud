@@ -1,41 +1,42 @@
-create table c_order
-(
-    id           char(32)         not null,
-    order_no     varchar(50)      not null comment '订单号',
-    order_status char default '0' not null comment '0 创建 1 完成 2 删除',
-    finish_date  datetime         null comment '完成日期',
-    delete_date  datetime         null comment '删除日期',
-    create_date  datetime         not null,
-    create_by    char(32)         not null,
-    update_date  datetime         not null,
-    update_by    char(32)         not null,
-    amount       double           not null,
-    constraint order_id_uindex
-        unique (id)
-)
-    comment '订单';
-alter table c_order
-    add primary key (id);
+/*
+ Navicat Premium Data Transfer
 
-create table c_order_detail
-(
-    id          char(32)    not null,
-    order_id    char(32)    null comment '订单id',
-    good_id     char(32)    not null comment '商品ID',
-    good_name   varchar(50) not null comment '商品名称',
-    price       double      not null comment '商品价格',
-    quantity    int         not null comment '商品数量',
-    amount      double      null comment '总金额',
-    create_date datetime    not null,
-    create_by   char(32)    not null,
-    update_date datetime    not null,
-    update_by   char(32)    null,
-    constraint order_detail_id_uindex
-        unique (id),
-    constraint c_order_detail_c_order_id_fk
-        foreign key (order_id) references c_order (id)
-            on update cascade on delete cascade
-)
-    comment '订单明细';
-alter table c_order_detail
-    add primary key (id);
+ Source Server         : MySQL
+ Source Server Type    : MySQL
+ Source Server Version : 50725
+ Source Host           : localhost:3306
+ Source Schema         : jupiter_cloud
+
+ Target Server Type    : MySQL
+ Target Server Version : 50725
+ File Encoding         : 65001
+
+ Date: 19/08/2020 19:13:33
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for orderlist
+-- ----------------------------
+DROP TABLE IF EXISTS `c_order`;
+CREATE TABLE `c_order`  (
+  `order_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单号',
+  `user_id` int(11) NOT NULL COMMENT '用户号',
+  `detail_id` int(11) NOT NULL COMMENT '商品子项目号',
+  `goods_id` int(11) NOT NULL COMMENT '商品号',
+  `number` int(11) NOT NULL COMMENT '数目',
+  `price` float NOT NULL COMMENT '价格',
+  `source_id` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '原站票号',
+  `order_status` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0 创建 1 完成 -1 删除',
+  `time` timestamp(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0) COMMENT '创建时间',
+  PRIMARY KEY (`order_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '订单' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of orderlist
+-- ----------------------------
+INSERT INTO `c_order` VALUES (1, 1, 1891, 514, 1, 80, 'test12313', 0, '2020-08-19 19:11:28');
+
+SET FOREIGN_KEY_CHECKS = 1;

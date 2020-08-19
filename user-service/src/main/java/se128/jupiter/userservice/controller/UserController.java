@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -29,8 +30,7 @@ public class UserController {
     public List<UserEntity> getAllUser()
     {
         logger.info("getAllUsers");
-        List<UserEntity> users = userService.getAllUsers();
-        return users;
+        return userService.getAllUsers();
     }
 
     @PostMapping
@@ -39,18 +39,39 @@ public class UserController {
         return userService.saveUser(userEntity);
     }
 
-
     @PutMapping
     public UserEntity editUser(@RequestBody UserEntity userEntity) {
         logger.info("editUser");
-        UserEntity user = userService.editUser(userEntity);
-        return user;
+        return userService.editUser(userEntity);
     }
 
-    @PostMapping("/login")
-    public UserEntity login(@RequestBody UserEntity userEntity) {
-        logger.info("login");
-        return userService.login(userEntity);
+    @PatchMapping("/ban/{id}")
+    public UserEntity banUser(@PathVariable Integer id)
+    {
+        logger.info("banUser");
+        return userService.banUser(id);
+    }
+
+    @PatchMapping("/unban/{id}")
+    public UserEntity unbanUser(@PathVariable Integer id)
+    {
+        logger.info("unbanUser");
+        return userService.unbanUser(id);
+    }
+
+    @PatchMapping("/buyCount/{id}/{goodsType}")
+    public UserEntity addBuy(@PathVariable Integer id, @PathVariable Integer goodsType)
+    {
+        logger.info("addView");
+        return userService.addBuy(id,goodsType);
+    }
+
+    @PostMapping("/checkUser")
+    public UserEntity checkUser(@RequestBody Map<String, String> params) {
+        logger.info("checkUser");
+        String username = params.get("username");
+        String password = params.get("password");
+        return userService.checkUser(username,password);
     }
 
 }
