@@ -54,6 +54,7 @@ public class UserCenterController {
         data.put("order", orderList);
         return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
+
     @PostMapping()
     public Msg addOrder(@RequestBody OrderDto orderDto)
     {
@@ -67,11 +68,11 @@ public class UserCenterController {
         return MsgUtil.makeMsg(MsgCode.ADD_SUCCESS, MsgUtil.BUY_SUCCESS_MSG, data);
     }
 
-    private Object error(String userId) {
-        return "请求出错";
+    private Msg error(String userId) {
+        return MsgUtil.makeMsg(MsgCode.DATA_ERROR);
     }
 
-    private Object fallback(){
-        return "错误";
+    private Msg fallback(){
+        return MsgUtil.makeMsg(MsgCode.DATA_ERROR);
     }
 }

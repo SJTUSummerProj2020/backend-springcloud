@@ -7,151 +7,136 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "c_good")
+@Table(name = "goods")
 @EntityListeners(AuditingEntityListener.class)
 public class CGoodEntity {
-    //
-//    @Id
-//    @Column(name = "goods_id")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Integer goodsId;
-//
-//    private String name;
-//
-//    private String startTime;
-//
-//    private String endTime;
-//
-//    private String address;
-//    private String website;
-//
-//    private Integer goodsType;
-//
-//    private String image;
-//
-//    private Integer viewCounter;
-//
-//    private Integer buyCounter;
-//
-//    @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
-//    @JoinColumn(name = "goods_id")
-//    private List<GoodsDetail> goodsDetails;
-//
-//    @Transient
-//    private String detail;
-    private String id;
-    private String goodName;
-    private Integer goodStock;
-    private double goodPrice;
-    private Timestamp createDate;
-    private String createBy = "sys";
-    private Timestamp updateDate;
-    private String updateBy = "sys";
+
+    private Integer goodsId;
+    private String name;
+    private String startTime;
+    private String endTime;
+    private String address;
+    private String website;
+    private Integer goodsType;
+    private String image;
+    private Integer viewCounter = 0;
+    private Integer buyCounter = 0;
+    private List<CGoodsDetail> goodsDetails;
+    private String detail;
 
     @Id
-    @Column(name = "id", nullable = false, length = 32)
-    @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
-    @GeneratedValue(generator = "jpa-uuid")
-    public String getId() {
-        return id;
+    @Column(name = "goods_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Integer getGoodsId()
+    {
+        return goodsId;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    @Basic
-    @Column(name = "good_name", nullable = true, length = 50)
-    public String getGoodName() {
-        return goodName;
-    }
-
-    public void setGoodName(String goodName) {
-        this.goodName = goodName;
+    public void setGoodsId(Integer goodsId)
+    {
+        this.goodsId = goodsId;
     }
 
     @Basic
-    @Column(name = "good_stock", nullable = true)
-    public Integer getGoodStock() {
-        return goodStock;
+    @Column(name = "name", nullable = true)
+    public String getName() {
+        return name;
     }
-
-    public void setGoodStock(Integer goodStock) {
-        this.goodStock = goodStock;
-    }
-
-    @Basic
-    @Column(name = "good_price", nullable = false)
-    public double getGoodPrice() {
-        return goodPrice;
-    }
-
-    public void setGoodPrice(double goodPrice) {
-        this.goodPrice = goodPrice;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Basic
-    @Column(name = "create_date", nullable = false)
-    @CreatedDate
-    public Timestamp getCreateDate() {
-        return createDate;
+    @Column(name = "start_time", nullable = true)
+    public String getStartTime() {
+        return startTime;
     }
-
-    public void setCreateDate(Timestamp createDate) {
-        this.createDate = createDate;
-    }
-
-    @Basic
-    @Column(name = "create_by", nullable = false, length = 32)
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
     }
 
     @Basic
-    @Column(name = "update_date", nullable = false)
-    @LastModifiedDate
-    public Timestamp getUpdateDate() {
-        return updateDate;
+    @Column(name = "end_time", nullable = true)
+    public String getEndTime() {
+        return endTime;
     }
-
-    public void setUpdateDate(Timestamp updateDate) {
-        this.updateDate = updateDate;
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
     @Basic
-    @Column(name = "update_by", nullable = false, length = 32)
-    public String getUpdateBy() {
-        return updateBy;
+    @Column(name = "address", nullable = true)
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
+    @Basic
+    @Column(name = "website", nullable = true)
+    public String getWebsite() {
+        return website;
+    }
+    public void setWebsite(String website) {
+        this.website = website;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CGoodEntity that = (CGoodEntity) o;
-        return goodPrice == that.goodPrice &&
-                Objects.equals(id, that.id) &&
-                Objects.equals(goodName, that.goodName) &&
-                Objects.equals(goodStock, that.goodStock) &&
-                Objects.equals(createDate, that.createDate) &&
-                Objects.equals(createBy, that.createBy) &&
-                Objects.equals(updateDate, that.updateDate) &&
-                Objects.equals(updateBy, that.updateBy);
+    @Basic
+    @Column(name = "goods_type", nullable = true)
+    public Integer getGoodsType() {
+        return goodsType;
+    }
+    public void setGoodsType(Integer goodsType) {
+        this.goodsType = goodsType;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, goodName, goodStock, goodPrice, createDate, createBy, updateDate, updateBy);
+    @Basic
+    @Column(name = "image", nullable = true)
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    @Basic
+    @Column(name = "view_counter", nullable = true)
+    public Integer getViewCounter() {
+        return viewCounter;
+    }
+    public void setViewCounter(Integer viewCounter) {
+        this.viewCounter = viewCounter;
+    }
+
+    @Basic
+    @Column(name = "buy_counter", nullable = true)
+    public Integer getBuyCounter() {
+        return buyCounter;
+    }
+    public void setBuyCounter(Integer buyCounter) {
+        this.buyCounter = buyCounter;
+    }
+
+    @OneToMany(targetEntity = CGoodsDetail.class,cascade =CascadeType.ALL)
+    @JoinColumn(name = "goods_id")
+    public List<CGoodsDetail> getGoodsDetails()
+    {
+        return goodsDetails;
+    }
+    public void setGoodsDetails(List<CGoodsDetail> goodsDetails)
+    {
+        this.goodsDetails= goodsDetails;
+    }
+
+    @Transient
+    public String getDetail() {
+        return detail;
+    }
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 }
