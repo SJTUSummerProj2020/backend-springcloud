@@ -1,129 +1,133 @@
 package se128.jupiter.userservice.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
-import java.util.Objects;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "user")
 public class UserEntity {
-    private String id;
-    private String userName;
-    private String nickName;
-    private String userPswd;
-    private Timestamp createDate;
-    private String createBy;
-    private Timestamp updateDate;
-    private String updateBy;
+
+    private Integer userId;
+    private String username;
+    private String nickname;
+    private String password;
+    private String phone;
+    private Integer userType;
+    private Integer buy0;
+    private Integer buy1;
+    private Integer buy2;
+    private Integer buy3;
+    private Integer buy4;
+    private Integer buy5;
 
     @Id
-    @Column(name = "id", nullable = false, length = 32)
-    @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
-    @GeneratedValue(generator = "jpa-uuid")
-    public String getId() {
-        return id;
+    @Column(name = "user_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Integer getUserId() {
+        return this.userId;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    @Basic
-    @Column(name = "user_name", nullable = false, length = 20)
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     @Basic
-    @Column(name = "nick_name", nullable = false, length = 20)
-    public String getNickName() {
-        return nickName;
+    @Column(name = "user_name",nullable = false)
+    public String getUsername() {
+        return this.username;
     }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
-    @Basic
-    @Column(name = "user_pswd", nullable = false, length = 50)
-    public String getUserPswd() {
-        return userPswd;
-    }
-
-    public void setUserPswd(String userPswd) {
-        this.userPswd = userPswd;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Basic
-    @Column(name = "create_date", nullable = false)
-    @CreatedDate
-    public Timestamp getCreateDate() {
-        return createDate;
+    @Column(name = "nick_name", nullable = false)
+    public String getNickname() {
+        return nickname;
     }
-
-    public void setCreateDate(Timestamp createDate) {
-        this.createDate = createDate;
-    }
-
-    @Basic
-    @Column(name = "create_by", nullable = false, length = 32)
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     @Basic
-    @Column(name = "update_date", nullable = false)
-    @LastModifiedDate
-    public Timestamp getUpdateDate() {
-        return updateDate;
+    @Column(name = "password")
+    public String getPassword() {
+        return this.password;
     }
-
-    public void setUpdateDate(Timestamp updateDate) {
-        this.updateDate = updateDate;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Basic
-    @Column(name = "update_by", nullable = false, length = 32)
-    public String getUpdateBy() {
-        return updateBy;
+    @Column(name = "user_type")
+    public Integer getUserType() {
+        return this.userType;
+    }
+    public void setUserType(Integer userType) {
+        this.userType = userType;
     }
 
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
+    @Basic
+    @Column(name = "phone")
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserEntity that = (UserEntity) o;
-        return Objects.equals(id, that.id) &&
-                Objects.equals(userName, that.userName) &&
-                Objects.equals(nickName, that.nickName) &&
-                Objects.equals(userPswd, that.userPswd) &&
-                Objects.equals(createDate, that.createDate) &&
-                Objects.equals(createBy, that.createBy) &&
-                Objects.equals(updateDate, that.updateDate) &&
-                Objects.equals(updateBy, that.updateBy);
+    @Basic
+    @Column(name = "buy0")
+    public Integer getBuy0() {
+        return buy0;
+    }
+    public void setBuy0(Integer buy0) {
+        this.buy0 = buy0;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, userName, nickName, userPswd, createDate, createBy, updateDate, updateBy);
+    @Basic
+    @Column(name = "buy1")
+    public Integer getBuy1() {
+        return buy1;
+    }
+    public void setBuy1(Integer buy1) {
+        this.buy1 = buy1;
     }
 
+    @Basic
+    @Column(name = "buy2")
+    public Integer getBuy2() {
+        return buy2;
+    }
+    public void setBuy2(Integer buy2) {
+        this.buy2 = buy2;
+    }
+
+    @Basic
+    @Column(name = "buy3")
+    public Integer getBuy3() {
+        return buy3;
+    }
+    public void setBuy3(Integer buy3) {
+        this.buy3 = buy3;
+    }
+
+    @Basic
+    @Column(name = "buy4")
+    public Integer getBuy4() {
+        return buy4;
+    }
+    public void setBuy4(Integer buy4) {
+        this.buy4 = buy4;
+    }
+
+    @Basic
+    @Column(name = "buy5")
+    public Integer getBuy5() {
+        return buy5;
+    }
+    public void setBuy5(Integer buy5) {
+        this.buy5 = buy5;
+    }
 }
