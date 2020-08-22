@@ -13,6 +13,7 @@
         <module>user-center</module>
         <module>turbine</module>
         <module>config</module>
+        <module>sso-server</module>
     </modules>
     <groupId>se128.jupiter</groupId>
     <artifactId>backend</artifactId>

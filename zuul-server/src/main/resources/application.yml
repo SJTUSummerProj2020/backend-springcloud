@@ -18,10 +18,27 @@ management:
 zuul:
   prefix: /api
   routes:
-    user-service: /myuser/**
-    goods-service: /mygoods/**
-    order-service: /myorder/**
-    user-center: /usercenter/**
+    user-service:
+      path: /myuser/**
+      serviceId: user-service
+      sensitiveHeaders: "*"
+    goods-service:
+      path: /mygoods/**
+      serviceId: goods-service
+      sensitiveHeaders: "*"
+    order-service:
+      path: /myorder/**
+      serviceId: order-service
+      sensitiveHeaders: "*"
+    user-center:
+      path: /usercenter/**
+      serviceId: user-center
+      sensitiveHeaders: "*"
+    sso-server:
+      path: /sso/**
+      serviceId: sso-server
+      sensitiveHeaders: "*"
+
 ribbon:
   eureka:
     enabled: true
