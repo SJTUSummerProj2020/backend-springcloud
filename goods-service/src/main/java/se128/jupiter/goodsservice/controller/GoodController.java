@@ -83,27 +83,29 @@ public class GoodController {
         }
         return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
-//    @GetMapping("/getRecommendGoods/{number}")
-//    public Msg getRecommendGoods(@PathVariable Integer number) {
-////        Integer number = Integer.valueOf(params.get(Constant.NUMBER));
-//        JSONObject user = SessionUtil.getAuth();
-//        if (user == null) {
-//            logger.info("getRecommendGoodsInAll" + "number: " + number);
-//            List<Goods> goods = goodsService.getRecommendGoodsInAll(number);
-//            JSONArray jsonArray = JSONArray.fromObject(goods);
-//            JSONObject data = new JSONObject();
-//            data.put("goods", jsonArray.toString());
-//            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
-//        } else {
-//            Integer userId = user.getInt(Constant.USER_ID);
-//            logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
-//            List<Goods> goods = goodsService.getRecommendGoodsByUserId(userId, number);
-//            JSONArray jsonArray = JSONArray.fromObject(goods);
-//            JSONObject data = new JSONObject();
-//            data.put("goods", jsonArray.toString());
-//            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
-//        }
-//    }
+
+    @GetMapping("/getRecommendGoods/{number}")
+    public Msg getRecommendGoods(@PathVariable Integer number) {
+//        Integer number = Integer.valueOf(params.get(Constant.NUMBER));
+        //JSONObject user = SessionUtil.getAuth();
+        JSONObject user = null;
+        if (user == null) {
+            logger.info("getRecommendGoodsInAll" + "number: " + number);
+            List<CGoodEntity> goods = goodService.getRecommendGoodsInAll(number);
+            JSONArray jsonArray = JSONArray.fromObject(goods);
+            JSONObject data = new JSONObject();
+            data.put("goods", jsonArray.toString());
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        } else {
+            Integer userId = user.getInt("userId");
+            logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
+            List<CGoodEntity> goods = goodService.getRecommendGoodsByGoodsType(4, number);
+            JSONArray jsonArray = JSONArray.fromObject(goods);
+            JSONObject data = new JSONObject();
+            data.put("goods", jsonArray.toString());
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        }
+    }
 
     @PostMapping("/editGoods")
     public Msg editGoods(@RequestBody CGoodEntity goods) {

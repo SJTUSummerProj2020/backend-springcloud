@@ -26,6 +26,10 @@ public class UserServiceImpl {
         if (StringUtils.isEmpty(userEntity)) {
             return null;
         }
+        if (userRepository.getUserEntityByUsername(userEntity.getUsername())!= null)
+        {
+            return null;
+        }
         userEntity.setUserType(1);
         userEntity.setBuy0(0);
         userEntity.setBuy1(0);

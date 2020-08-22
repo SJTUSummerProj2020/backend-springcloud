@@ -1,5 +1,6 @@
 package se128.jupiter.goodsservice.service;
 
+import org.omg.CORBA.UserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
@@ -42,7 +43,7 @@ public class GoodServiceImpl {
 
     public CGoodEntity deleteGoodsByGoodsId(Integer id) {
         CGoodEntity cGoodEntity = goodsDao.getGoodsByGoodsId(id);
-        cGoodEntity.setGoodsType(-cGoodEntity.getGoodsType());
+        cGoodEntity.setGoodsType(-1);
         return goodsDao.saveGoods(cGoodEntity);
     }
 
@@ -88,8 +89,15 @@ public class GoodServiceImpl {
         return goodsDao.getPopularGoods(number,goodsType);
     }
 
-    public void deleteAuctionByAuctionId(Integer auctionId) {
+    public List<CGoodEntity> getRecommendGoodsByGoodsType(Integer goodsType, Integer number) {
+        return goodsDao.getRecommendGoodsByGoodsType(goodsType,number);
+    }
 
+    public List<CGoodEntity> getRecommendGoodsInAll(Integer number) {
+        return goodsDao.getRecommendGoodsInAll(number);
+    }
+
+    public void deleteAuctionByAuctionId(Integer auctionId) {
     }
 
     public List<Auction> getAllAuctions() {

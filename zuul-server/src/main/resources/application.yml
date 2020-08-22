@@ -18,9 +18,9 @@ management:
 zuul:
   prefix: /api
   routes:
-    user-service: /myuser/**
-    goods-service: /mygoods/**
-    order-service: /myorder/**
+    user-service: /user/**
+    goods-service: /goods/**
+    order-service: /order/**
     user-center: /usercenter/**
 ribbon:
   eureka:
