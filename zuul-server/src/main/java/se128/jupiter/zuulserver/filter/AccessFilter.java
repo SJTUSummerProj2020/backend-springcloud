@@ -69,7 +69,7 @@ public class AccessFilter extends ZuulFilter {
 
             System.out.println("INNNNNNNNNNNNN");
         }
-        else{
+        else{   // 拒绝访问
             // send json back
             Msg msg = MsgUtil.makeMsg(MsgCode.NOT_AVAILABLE);
             response.setCharacterEncoding("UTF-8");

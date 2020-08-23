@@ -1,13 +1,18 @@
 package se128.jupiter.ssoserver.controller;
 
 
+import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
+import se128.jupiter.ssoserver.entity.UserEntity;
+import se128.jupiter.ssoserver.service.UserServiceImpl;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOError;
 import java.io.IOException;
@@ -19,6 +24,8 @@ import java.util.concurrent.TimeUnit;
 public class ValidationController {
     @Autowired
     private StringRedisTemplate template;
+    @Autowired
+    private UserServiceImpl userService;
 
     @RequestMapping("/redis/hasKey/{key}")
     public Boolean hasKey(@PathVariable("key") String key) {
@@ -30,47 +37,68 @@ public class ValidationController {
         }
     }
 
-    /**
-     * 校验用户名密码，成功则返回通行令牌（这里写死huanzi/123456）
-     */
+    @RequestMapping("/redis/getKeyValue/{key}")
+    public JSONObject getKeyValue(@PathVariable("key") String key){
+        String jsonString = template.opsForValue().get(key);
+        return JSONObject.fromObject(jsonString);
+    }
+
+
+     /* 校验用户名密码，一般用于内部函数 */
     @RequestMapping("/login/{username}/{password}")
-    public String checkUsernameAndPassword(@PathVariable("username") String username, @PathVariable("password") String password) {
-        String flag = null;
-        if ("huanzi".equals(username) && "123456".equals(password)) {
-            // 用户名+时间戳（这里只是demo，正常项目的令牌应该要更为复杂）
-            flag = username + System.currentTimeMillis();
-            // 令牌作为key，存用户id作为value（或者直接存储可暴露的部分用户信息也行）设置过期时间（我这里设置3分钟）
-            template.opsForValue().set(flag, "1", (long) (3 * 60), TimeUnit.SECONDS);
+    public JSONObject checkUsernameAndPassword(@PathVariable("username") String username, @PathVariable("password") String password) {
+        UserEntity user = null;
+        user = userService.checkUser(username, password);
+        JSONObject ret = new JSONObject();
+        String accessToken = "";
+        if (user == null){  // 验证错误
+            return null;
         }
-        return flag;
+        else{
+            // 用户名+时间戳
+            accessToken = username + System.currentTimeMillis();
+
+            ret.put("userId", user.getUserId());
+            ret.put("username", user.getUsername());
+            ret.put("userType", user.getUserType());
+            ret.put("accessToken", accessToken);
+
+            // 令牌作为key 存用户信息作为value
+            template.opsForValue().set(accessToken, ret.toString(), (long) (3 * 60), TimeUnit.SECONDS);
+            return ret;
+        }
     }
 
     @PostMapping("/login")
-    public String login(HttpServletResponse response, @RequestBody Map<String, String> params){
+    public JSONObject login(HttpServletResponse response, @RequestBody Map<String, String> params){
         String username = params.get("username");
         String password = params.get("password");
 
-        String check = checkUsernameAndPassword(username, password);
-        if(!StringUtils.isEmpty(check)){
+        JSONObject check = checkUsernameAndPassword(username, password);
+        if(check != null){
             try{
-                Cookie cookie = new Cookie("accessToken", check);
+                Cookie cookie = new Cookie("accessToken", check.getString("accessToken"));
                 cookie.setMaxAge(60 * 3);
                 // 设置域
-                // cookie.setDomain("localhost:8801");
+                // cookie.setDomain("localhost");
                 cookie.setPath("/");
                 response.addCookie(cookie);
             } catch(Exception e){
                 e.printStackTrace();
             }
-            return "login success";
+            return check;
         }
-        return "login failed";
+        return null;
     }
 
     @RequestMapping("/checkSession")
-    public boolean checkSession(){
-
+    public boolean checkSession(HttpServletRequest request){
+        StringBuilder url = new StringBuilder(request.getRequestURL().toString());
+        String urlStr = url.toString();
+        // 按照权限指定是否能访问相关网页
+        if (urlStr.contains("/xxx") || urlStr.contains("/xxxxh")){
+            return true;
+        }
         return true;
     }
-
 }
