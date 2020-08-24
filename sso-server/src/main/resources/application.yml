@@ -1,0 +1,24 @@
+server:
+  port: 8810
+
+spring:
+  datasource:
+    name: MysqlDataSource
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/jupiter_cloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  application:
+    name: sso-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+  instance:
+    prefer-ip-address: true
