@@ -1,12 +1,13 @@
 package se128.jupiter.goodsservice.service;
 
-import org.omg.CORBA.UserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
+import se128.jupiter.goodsservice.dao.AuctionDaoImpl;
 import se128.jupiter.goodsservice.dao.GoodsDaoImpl;
 import se128.jupiter.goodsservice.entity.Auction;
 import se128.jupiter.goodsservice.entity.CGoodEntity;
+import se128.jupiter.goodsservice.entity.CGoodsDetail;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -17,11 +18,14 @@ public class GoodServiceImpl {
 
     private final GoodsDaoImpl goodsDao;
 
+    private final AuctionDaoImpl auctionDao;
+
     private HashMap<Integer,Integer> goodsViewCounter;
 
     @Autowired
-    public GoodServiceImpl(GoodsDaoImpl goodsDao) {
+    public GoodServiceImpl(GoodsDaoImpl goodsDao, AuctionDaoImpl auctionDao) {
         this.goodsDao = goodsDao;
+        this.auctionDao = auctionDao;
         this.goodsViewCounter = new HashMap<Integer,Integer>();
     }
     public CGoodEntity getGood(Integer id) {
@@ -98,21 +102,36 @@ public class GoodServiceImpl {
     }
 
     public void deleteAuctionByAuctionId(Integer auctionId) {
+        auctionDao.deleteAuctionByAuctionId(auctionId);
     }
 
     public List<Auction> getAllAuctions() {
-        return null;
+        return auctionDao.getAllAuctions();
     }
     public Auction getAuctionByAuctionId(Integer auctionId) {
-        return null;
+        return auctionDao.getAuctionByAuctionId(auctionId);
     }
     public Auction updateAuction(Integer auctionId, Integer userId, Double offer) {
-        return null;
+        Auction auction = auctionDao.getAuctionByAuctionId(auctionId);
+        if(auction.getBestOffer()<offer)
+        {
+            auction.setBestOffer(offer);
+            auction.setUserId(userId);
+        }
+        return auctionDao.saveAuction(auction);
     }
     public Auction editAuction(Auction auction, Integer detailId, Integer goodsId) {
-        return null;
+        CGoodEntity goods = goodsDao.getGoodsByGoodsId(goodsId);
+        CGoodsDetail detail = goodsDao.getGoodsDetailByDetailId(detailId);
+        auction.setGoods(goods);
+        auction.setGoodsDetail(detail);
+        return auctionDao.editAuction(auction);
     }
     public Auction addAuction(Auction auction, Integer goodsId, Integer detailId) {
-        return null;
+        CGoodEntity goods = goodsDao.getGoodsByGoodsId(goodsId);
+        CGoodsDetail detail = goodsDao.getGoodsDetailByDetailId(detailId);
+        auction.setGoods(goods);
+        auction.setGoodsDetail(detail);
+        return auctionDao.addAuction(auction);
     }
 }
