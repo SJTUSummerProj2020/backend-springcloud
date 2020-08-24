@@ -90,6 +90,7 @@ public class GoodController {
     }
 
     @GetMapping("/getRecommendGoods/{number}")
+
     public Msg getRecommendGoods(HttpServletRequest request, @PathVariable Integer number) {
         // 找accessToken
         String accessToken  = "";
@@ -112,7 +113,7 @@ public class GoodController {
         } else {
             Integer userId = user.getInt("userId");
             logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
-            List<CGoodEntity> goods = goodService.getRecommendGoodsByUserId(userId, number);
+            List<CGoodEntity> goods = goodService.getRecommendGoodsByGoodsType(4, number);
             JSONArray jsonArray = JSONArray.fromObject(goods);
             JSONObject data = new JSONObject();
             data.put("goods", jsonArray.toString());

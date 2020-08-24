@@ -1,0 +1,970 @@
+INFO 2020-08-21 23:13:02:888 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:889 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:889 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:890 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:890 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:891 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:891 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:892 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:893 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:894 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:895 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:895 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:896 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:896 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:897 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:897 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:898 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:899 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:899 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:900 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:900 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:901 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jdbc-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:901 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:902 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:902 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:903 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:903 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:904 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:904 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:905 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:905 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:906 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:906 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:907 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:907 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:908 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:908 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:909 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:909 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:910 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:910 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:921 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:921 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:922 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:925 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:927 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:928 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:928 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:929 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:931 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:932 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:933 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:933 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:934 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:935 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:935 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\spring-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:936 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:937 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:938 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:938 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:939 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:940 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:940 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:947 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:949 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:950 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:951 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:952 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:953 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:953 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:953 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:953 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:953 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:954 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:954 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:954 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:954 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:954 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:955 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:956 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:957 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:958 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:959 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:960 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:960 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:960 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:960 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:960 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:961 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:02:962 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:13:06:909 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:910 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:910 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:910 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:911 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:912 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:913 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:914 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jdbc-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:915 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:916 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:917 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:918 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:919 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:920 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:921 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:921 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:921 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:922 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:922 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:922 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:922 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:923 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:924 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:925 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:925 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:925 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:925 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:926 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:927 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:927 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:927 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:928 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:928 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:928 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:929 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:929 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:930 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\spring-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:931 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:932 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:932 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:932 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:933 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:933 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:13:06:933 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar loaded. 
+WARN 2020-08-21 23:13:12:814 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:13:12:815 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:13:12:815 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:13:13:323 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:13:13:323 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:13:13:323 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:13:16:680 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:13:16:681 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:13:17:734 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:13:17:734 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2020-08-21 23:15:02:327 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:688)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:15:06:338 SkywalkingAgent-8-ServiceManagementClient-0 ServiceManagementClient : ServiceManagementClient execute fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.management.v3.ManagementServiceGrpc$ManagementServiceBlockingStub.keepAlive(ManagementServiceGrpc.java:219)
+	at org.apache.skywalking.apm.agent.core.remote.ServiceManagementClient.run(ServiceManagementClient.java:130)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:688)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:15:06:338 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:688)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:15:06:339 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:688)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+INFO 2020-08-21 23:18:08:839 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:839 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:840 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:840 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:841 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:841 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:842 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:842 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:843 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:843 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:844 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:844 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:845 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:845 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:846 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:846 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:847 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:847 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:848 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:848 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:849 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:849 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jdbc-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:850 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:850 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:851 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:851 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:852 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:852 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:853 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:853 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:854 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:854 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:855 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:855 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:856 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:856 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:857 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:857 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:858 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:858 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:859 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:859 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:860 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:860 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:861 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:862 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:863 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:864 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:865 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:866 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:867 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:868 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:869 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:871 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:872 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:873 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:874 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:875 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:876 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:877 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:878 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:878 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:879 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:879 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:880 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:880 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:881 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:881 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:882 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:882 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:883 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:883 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:884 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:885 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:885 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:886 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:886 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:887 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:887 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:888 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:888 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:889 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:889 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\spring-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:890 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:890 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:891 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:892 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:892 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:892 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:893 main AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:08:914 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:914 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:915 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:915 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:916 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:917 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:917 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:918 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:919 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:919 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:920 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:920 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:921 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:921 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:922 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:923 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:923 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:924 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:924 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:925 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:925 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:926 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:927 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:927 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:928 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:928 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:929 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:929 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:930 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:931 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:931 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:932 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:932 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:933 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:934 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:934 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:935 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:936 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:936 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:937 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:937 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:938 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:938 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:939 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:940 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:940 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:941 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:941 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:942 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:942 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:942 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:942 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:942 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:943 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:944 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:945 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:946 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:948 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:948 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:948 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:948 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:08:948 main PluginResourcesResolver : find skywalking plugin define in jar:file:E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar!/skywalking-plugin.def 
+INFO 2020-08-21 23:18:12:535 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-activemq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:536 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.84.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:536 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-armeria-0.85.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:536 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-avro-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:537 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-canal-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:537 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-cassandra-java-driver-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:538 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-2.7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:538 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-dubbo-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:538 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-ehcache-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:539 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elastic-job-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:539 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:539 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-elasticsearch-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:540 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:540 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-finagle-6.25.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:541 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-grpc-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:541 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-h2-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:541 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:542 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpclient-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:542 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-httpClient-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:542 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-hystrix-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:542 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-influxdb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:543 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jdbc-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:543 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jedis-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:543 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:544 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-client-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:544 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-jetty-server-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:544 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-kafka-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:544 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-lettuce-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:545 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-light4j-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:545 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mariadb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:545 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:545 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mongodb-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:546 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:546 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-6.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:546 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:546 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-mysql-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:547 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-netty-socketio-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:547 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-http-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:547 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:547 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-okhttp-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:548 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-play-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:548 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-postgresql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:549 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-pulsar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:549 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-quasar-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:549 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:550 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-redisson-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:550 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:550 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:551 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-rocketmq-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:551 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:551 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:552 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:552 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:552 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.1.0-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:553 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:553 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-sharding-sphere-4.x-rc3-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:553 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-shardingsphere-4.0.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:554 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-solrj-7.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:554 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-async-annotation-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:554 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:555 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-cloud-feign-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:555 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:555 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-core-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:556 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spring-webflux-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:556 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:556 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:557 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:557 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-springmvc-annotation-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:557 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-spymemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:558 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-struts2-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:558 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-undertow-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:558 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-vertx-core-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:559 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\apm-xmemcached-2.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:559 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\baidu-brpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:559 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-2.7.x-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:560 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\dubbo-conflict-patch-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:560 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-12.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:561 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:561 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\graphql-9.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:561 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\motan-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:561 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\resteasy-server-3.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:561 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\sofa-rpc-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:562 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\spring-commons-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:562 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\plugins\tomcat-7.x-8.x-plugin-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:563 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:563 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:563 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-logback-1.x-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:563 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-meter-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:563 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-opentracing-activation-8.1.0.jar loaded. 
+INFO 2020-08-21 23:18:12:564 SkywalkingAgent-5-GRPCChannelManager-0 AgentClassLoader : E:\Workspace\GitHub\SJTUSummerProj2020\backend-springcloud\skywalking\agent\activations\apm-toolkit-trace-activation-8.1.0.jar loaded. 
+ERROR 2020-08-21 23:18:14:171 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:14:171 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:15:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:16:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:17:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2020-08-21 23:18:17:888 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:18:17:888 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:18:17:888 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2020-08-21 23:18:18:108 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2020-08-21 23:18:18:436 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:18:18:436 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+WARN 2020-08-21 23:18:18:436 main AbstractClassEnhancePluginDefine : enhance class org.springframework.cloud.netflix.eureka.server.EurekaController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2020-08-21 23:18:19:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:20:108 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:21:109 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2020-08-21 23:18:21:798 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:18:21:799 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2020-08-21 23:18:22:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+WARN 2020-08-21 23:18:22:818 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.web.servlet.view.xslt.AbstractXsltView is not existed. 
+WARN 2020-08-21 23:18:22:818 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation is not working. Because witness class org.springframework.cache.interceptor.DefaultKeyGenerator is not existed. 
+ERROR 2020-08-21 23:18:24:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:25:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:26:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:27:111 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:28:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:29:110 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:30:109 SkywalkingAgent-7-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:240)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:221)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:140)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:158)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+ERROR 2020-08-21 23:18:30:273 grpc-default-executor-0 TraceSegmentServiceClient : Send UpstreamSegment to collector fail with a grpc internal exception. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:533)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:449)
+	at org.apache.skywalking.apm.dependencies.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at org.apache.skywalking.apm.dependencies.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at org.apache.skywalking.apm.dependencies.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700)
+	at org.apache.skywalking.apm.dependencies.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at org.apache.skywalking.apm.dependencies.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at org.apache.skywalking.apm.dependencies.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:521)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:641)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:529)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:703)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:692)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

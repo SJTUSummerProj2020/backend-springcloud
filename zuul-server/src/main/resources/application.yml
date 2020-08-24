@@ -19,15 +19,15 @@ zuul:
   prefix: /api
   routes:
     user-service:
-      path: /myuser/**
+      path: /user/**
       serviceId: user-service
       sensitiveHeaders: "*"
     goods-service:
-      path: /mygoods/**
+      path: /goods/**
       serviceId: goods-service
       sensitiveHeaders: "*"
     order-service:
-      path: /myorder/**
+      path: /order/**
       serviceId: order-service
       sensitiveHeaders: "*"
     user-center:
