@@ -57,6 +57,11 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
+        <!-- feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
 </project>
 

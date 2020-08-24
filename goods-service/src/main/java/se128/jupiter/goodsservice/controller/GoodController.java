@@ -12,7 +12,10 @@ import se128.jupiter.goodsservice.msgutils.Msg;
 import se128.jupiter.goodsservice.msgutils.MsgCode;
 import se128.jupiter.goodsservice.msgutils.MsgUtil;
 import se128.jupiter.goodsservice.service.GoodServiceImpl;
+import se128.jupiter.goodsservice.service.SsoFeign;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,6 +30,8 @@ public class GoodController {
 
     @Autowired
     private GoodServiceImpl goodService;
+    @Autowired
+    private SsoFeign ssoFeign;
 
     @GetMapping("{id}")
     public CGoodEntity getGood(@PathVariable Integer id) {
@@ -83,27 +88,37 @@ public class GoodController {
         }
         return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
-//    @GetMapping("/getRecommendGoods/{number}")
-//    public Msg getRecommendGoods(@PathVariable Integer number) {
-////        Integer number = Integer.valueOf(params.get(Constant.NUMBER));
-//        JSONObject user = SessionUtil.getAuth();
-//        if (user == null) {
-//            logger.info("getRecommendGoodsInAll" + "number: " + number);
-//            List<Goods> goods = goodsService.getRecommendGoodsInAll(number);
-//            JSONArray jsonArray = JSONArray.fromObject(goods);
-//            JSONObject data = new JSONObject();
-//            data.put("goods", jsonArray.toString());
-//            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
-//        } else {
-//            Integer userId = user.getInt(Constant.USER_ID);
-//            logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
-//            List<Goods> goods = goodsService.getRecommendGoodsByUserId(userId, number);
-//            JSONArray jsonArray = JSONArray.fromObject(goods);
-//            JSONObject data = new JSONObject();
-//            data.put("goods", jsonArray.toString());
-//            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
-//        }
-//    }
+
+    @GetMapping("/getRecommendGoods/{number}")
+    public Msg getRecommendGoods(HttpServletRequest request, @PathVariable Integer number) {
+        // 找accessToken
+        String accessToken  = "";
+        Cookie[] cookies = request.getCookies();
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if("accessToken".equals(cookie.getName())){
+                    accessToken = cookie.getValue();
+                }
+            }
+        }
+        JSONObject user = ssoFeign.getKeyValue(accessToken);
+        if (user == null) {
+            logger.info("getRecommendGoodsInAll" + "number: " + number);
+            List<CGoodEntity> goods = goodService.getRecommendGoodsInAll(number);
+            JSONArray jsonArray = JSONArray.fromObject(goods);
+            JSONObject data = new JSONObject();
+            data.put("goods", jsonArray.toString());
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        } else {
+            Integer userId = user.getInt("userId");
+            logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
+            List<CGoodEntity> goods = goodService.getRecommendGoodsByUserId(userId, number);
+            JSONArray jsonArray = JSONArray.fromObject(goods);
+            JSONObject data = new JSONObject();
+            data.put("goods", jsonArray.toString());
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        }
+    }
 
     @PostMapping("/editGoods")
     public Msg editGoods(@RequestBody CGoodEntity goods) {

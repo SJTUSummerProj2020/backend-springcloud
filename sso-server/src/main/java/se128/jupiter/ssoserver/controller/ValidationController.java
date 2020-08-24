@@ -10,6 +10,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import se128.jupiter.ssoserver.entity.UserEntity;
 import se128.jupiter.ssoserver.service.UserServiceImpl;
+import se128.jupiter.ssoserver.utils.msgutils.Msg;
+import se128.jupiter.ssoserver.utils.msgutils.MsgCode;
+import se128.jupiter.ssoserver.utils.msgutils.MsgUtil;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -92,13 +95,26 @@ public class ValidationController {
     }
 
     @RequestMapping("/checkSession")
-    public boolean checkSession(HttpServletRequest request){
-        StringBuilder url = new StringBuilder(request.getRequestURL().toString());
-        String urlStr = url.toString();
-        // 按照权限指定是否能访问相关网页
-        if (urlStr.contains("/xxx") || urlStr.contains("/xxxxh")){
-            return true;
+    public Msg checkSession(HttpServletRequest request){
+        // 找accessToken
+        String accessToken  = "";
+        Cookie[] cookies = request.getCookies();
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if("accessToken".equals(cookie.getName())){
+                    accessToken = cookie.getValue();
+                }
+            }
         }
-        return true;
+
+        if("".equals(accessToken)){
+            return MsgUtil.makeMsg(MsgCode.NOT_LOGGED_IN_ERROR);
+        }
+        else if(hasKey(accessToken)){
+            return MsgUtil.makeMsg(MsgCode.SUCCESS, MsgUtil.LOGIN_SUCCESS_MSG, getKeyValue(accessToken));
+        }
+        else{
+            return MsgUtil.makeMsg(MsgCode.NOT_LOGGED_IN_ERROR);
+        }
     }
 }
