@@ -1,4 +1,5 @@
 package se128.jupiter.goodsservice.controller;
+import com.netflix.discovery.converters.Auto;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.logging.log4j.LogManager;
@@ -6,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+import se128.jupiter.goodsservice.dto.UserDto;
 import se128.jupiter.goodsservice.entity.Auction;
 import se128.jupiter.goodsservice.entity.CGoodEntity;
 import se128.jupiter.goodsservice.msgutils.Msg;
@@ -13,6 +15,7 @@ import se128.jupiter.goodsservice.msgutils.MsgCode;
 import se128.jupiter.goodsservice.msgutils.MsgUtil;
 import se128.jupiter.goodsservice.service.GoodServiceImpl;
 import se128.jupiter.goodsservice.service.SsoFeign;
+import se128.jupiter.goodsservice.service.UserFeign;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +35,8 @@ public class GoodController {
     private GoodServiceImpl goodService;
     @Autowired
     private SsoFeign ssoFeign;
+    @Autowired
+    private UserFeign userFeign;
 
     @GetMapping("{id}")
     public CGoodEntity getGood(@PathVariable Integer id) {
@@ -113,7 +118,37 @@ public class GoodController {
         } else {
             Integer userId = user.getInt("userId");
             logger.info("getRecommendGoodsByUserId" + userId + "number" + number);
-            List<CGoodEntity> goods = goodService.getRecommendGoodsByGoodsType(4, number);
+
+            // 获取user最喜欢的物品
+            int maxBuy = -1;
+            Integer maxNum = -1;
+            UserDto userDto = userFeign.getUser(userId);
+            if(maxNum < userDto.getBuy0()){
+                maxBuy = 0;
+                maxNum = userDto.getBuy0();
+            }
+            if(maxNum < userDto.getBuy1()){
+                maxBuy = 1;
+                maxNum = userDto.getBuy1();
+            }
+            if(maxNum < userDto.getBuy2()){
+                maxBuy = 2;
+                maxNum = userDto.getBuy2();
+            }
+            if(maxNum < userDto.getBuy3()){
+                maxBuy = 3;
+                maxNum = userDto.getBuy3();
+            }
+            if(maxNum < userDto.getBuy4()){
+                maxBuy = 4;
+                maxNum = userDto.getBuy4();
+            }
+            if(maxNum < userDto.getBuy5()){
+                maxBuy = 5;
+                maxNum = userDto.getBuy5();
+            }
+
+            List<CGoodEntity> goods = goodService.getRecommendGoodsByGoodsType(maxBuy, number);
             JSONArray jsonArray = JSONArray.fromObject(goods);
             JSONObject data = new JSONObject();
             data.put("goods", jsonArray.toString());
@@ -190,22 +225,34 @@ public class GoodController {
         return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
 
-//    @PostMapping("/updateAuction")
-//    public Msg updateAuction(@RequestBody Map<String, String> params) {
-//        Integer AuctionId = Integer.valueOf(params.get(Constant.AUCTION_ID));
-//        Double offer = Double.valueOf(params.get(Constant.OFFER));
-//        JSONObject user = SessionUtil.getAuth();
-//        if(user == null){
-//            return MsgUtil.makeMsg(MsgCode.EDIT_ERROR);
-//        }
-//        Integer userId = user.getInt(Constant.USER_ID);
-//        logger.info("updateAuction auctionsId = " + AuctionId+ " userId = " + userId);
-//        Auction auction = goodsService.updateAuction(AuctionId,userId,offer);
-//        if(auction.getBestOffer().equals(offer)) {
-//            return MsgUtil.makeMsg(MsgCode.EDIT_SUCCESS);
-//        }
-//        return MsgUtil.makeMsg(MsgCode.EDIT_ERROR);
-//    }
+    @PostMapping("/updateAuction")
+    public Msg updateAuction(HttpServletRequest request, @RequestBody Map<String, String> params) {
+        Integer AuctionId = Integer.valueOf(params.get("auctionId"));
+        Double offer = Double.valueOf(params.get("offer"));
+        // 找accessToken
+        String accessToken  = "";
+        Cookie[] cookies = request.getCookies();
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if("accessToken".equals(cookie.getName())){
+                    accessToken = cookie.getValue();
+                }
+            }
+        }
+        JSONObject user = ssoFeign.getKeyValue(accessToken);
+
+        if("".equals(accessToken) || user == null){
+            return MsgUtil.makeMsg(MsgCode.EDIT_ERROR);
+        }
+
+        Integer userId = user.getInt("userId");
+        logger.info("updateAuction auctionsId = " + AuctionId+ " userId = " + userId);
+        Auction auction = goodService.updateAuction(AuctionId, userId,offer);
+        if(auction.getBestOffer().equals(offer)) {
+            return MsgUtil.makeMsg(MsgCode.EDIT_SUCCESS);
+        }
+        return MsgUtil.makeMsg(MsgCode.EDIT_ERROR);
+    }
 
     @PostMapping("/editAuction")
     public Msg editAuction(@RequestBody Map<String, String> params) {
