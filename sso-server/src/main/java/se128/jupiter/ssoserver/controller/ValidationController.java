@@ -64,7 +64,7 @@ public class ValidationController {
             ret.put("accessToken", accessToken);
 
             // 令牌作为key 存用户信息作为value
-            template.opsForValue().set(accessToken, ret.toString(), (long) (3 * 60), TimeUnit.SECONDS);
+            template.opsForValue().set(accessToken, ret.toString(), (long) (10 * 60), TimeUnit.SECONDS);
             return ret;
         }
     }
@@ -78,7 +78,7 @@ public class ValidationController {
         if(check != null){
             try{
                 Cookie cookie = new Cookie("accessToken", check.getString("accessToken"));
-                cookie.setMaxAge(60 * 3);
+                cookie.setMaxAge(60 * 10);
                 // 设置域
                 // cookie.setDomain("localhost");
                 cookie.setPath("/");
