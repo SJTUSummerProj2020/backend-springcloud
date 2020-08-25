@@ -73,12 +73,20 @@ public class ValidationController {
     }
 
     @PostMapping("/login")
-    public JSONObject login(HttpServletResponse response, @RequestBody Map<String, String> params){
+    public Msg login(HttpServletResponse response, @RequestBody Map<String, String> params){
         String username = params.get("username");
         String password = params.get("password");
 
         JSONObject check = checkUsernameAndPassword(username, password);
-        if(check != null){
+        if (check == null){
+            System.out.println("user is null");
+            return MsgUtil.makeMsg(MsgCode.ERROR, MsgUtil.LOGIN_USER_ERROR_MSG);
+        }
+        if (check.getInt("userType") == -1){
+            template.delete(check.getString("accessToken"));
+            return MsgUtil.makeMsg(MsgCode.ERROR, MsgUtil.BAN_USER_ERROR_MSG);
+        }
+        else {
             try{
                 Cookie cookie = new Cookie("accessToken", check.getString("accessToken"));
                 cookie.setMaxAge(60 * 10);
@@ -89,9 +97,8 @@ public class ValidationController {
             } catch(Exception e){
                 e.printStackTrace();
             }
-            return check;
+            return MsgUtil.makeMsg(MsgCode.SUCCESS, MsgUtil.LOGIN_SUCCESS_MSG, check);
         }
-        return null;
     }
 
     @PostMapping("/logout")

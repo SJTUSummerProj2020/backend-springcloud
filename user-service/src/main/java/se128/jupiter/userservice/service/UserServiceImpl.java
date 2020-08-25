@@ -87,6 +87,18 @@ public class UserServiceImpl {
         }
     }
 
+    public UserEntity changeUserStatus(Integer id){
+        Optional<UserEntity> user = userRepository.findById(id);
+        if(user.isPresent()) {
+            int userType = user.get().getUserType();
+            user.get().setUserType(-userType);
+            return userRepository.saveAndFlush(user.get());
+        }
+        else{
+            return null;
+        }
+    }
+
     public UserEntity unbanUser(Integer id) {
         Optional<UserEntity> user = userRepository.findById(id);
         if(user.isPresent())
