@@ -28,6 +28,7 @@ public class GoodServiceImpl {
         this.auctionDao = auctionDao;
         this.goodsViewCounter = new HashMap<Integer,Integer>();
     }
+
     public CGoodEntity getGood(Integer id) {
         CGoodEntity goods =  goodsDao.getGoodsByGoodsId(id);
         if(goods != null)
@@ -37,22 +38,19 @@ public class GoodServiceImpl {
         return goods;
     }
 
-    public CGoodEntity saveGood(CGoodEntity cGoodEntity) {
-        return goodsDao.saveGoods(cGoodEntity);
-    }
-
     public CGoodEntity editGoods(CGoodEntity goods) {
         return goodsDao.editGoods(goods);
     }
 
-    public CGoodEntity deleteGoodsByGoodsId(Integer id) {
-        CGoodEntity cGoodEntity = goodsDao.getGoodsByGoodsId(id);
-        cGoodEntity.setGoodsType(-1);
+    public CGoodEntity saveGood(CGoodEntity cGoodEntity) {
         return goodsDao.saveGoods(cGoodEntity);
     }
 
-    public List<CGoodEntity> getGoodsByGoodsType(Integer goodsType) {
-        return goodsDao.getGoodsByGoodsType(goodsType);
+    public CGoodEntity addGoods(CGoodEntity goods) {
+        return goodsDao.addGoods(goods);
+    }
+    public void deleteGoodsByGoodsId(Integer id) {
+        goodsDao.deleteGoodsByGoodsId(id);
     }
 
     public List<CGoodEntity> getGoodsByName(String name) {
@@ -75,10 +73,6 @@ public class GoodServiceImpl {
 //        goods.clear();
 //        goods.addAll(tmp);
         return goods;
-    }
-
-    public List<CGoodEntity> getGoodsByPageId(Integer pageId) {
-        return goodsDao.getGoodsByPage(pageId);
     }
 
     public Page<CGoodEntity> getAllGoods(Integer pageId, Integer pageSize, Integer goodsType) {
@@ -134,4 +128,6 @@ public class GoodServiceImpl {
         auction.setGoodsDetail(detail);
         return auctionDao.addAuction(auction);
     }
+
+
 }

@@ -1,5 +1,5 @@
 server:
-  port: 8803
+  port: 8080
 spring:
   application:
     name: zuul-server
@@ -16,7 +16,6 @@ management:
       exposure:
         include: health,info,hysrix,stream,routes
 zuul:
-  prefix: /api
   routes:
     user-service:
       path: /user/**
