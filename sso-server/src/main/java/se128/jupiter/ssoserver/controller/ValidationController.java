@@ -94,6 +94,33 @@ public class ValidationController {
         return null;
     }
 
+    @PostMapping("/logout")
+    public Msg logout(HttpServletRequest request, HttpServletResponse response){
+        // 找accessToken
+        String accessToken  = "";
+        Cookie[] cookies = request.getCookies();
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if("accessToken".equals(cookie.getName())){
+                    accessToken = cookie.getValue();
+                }
+            }
+        }
+
+        if("".equals(accessToken) || !hasKey(accessToken)){
+            return MsgUtil.makeMsg(MsgCode.ERROR, MsgUtil.LOGOUT_ERR_MSG);
+        }
+        else{
+            // 删除key和cookie
+            template.delete(accessToken);
+            Cookie newCookie = new Cookie("accessToken", null);
+            newCookie.setMaxAge(0);
+            newCookie.setPath("/");
+            response.addCookie(newCookie);
+            return MsgUtil.makeMsg(MsgCode.SUCCESS, MsgUtil.LOGOUT_SUCCESS_MSG);
+        }
+    }
+
     @RequestMapping("/checkSession")
     public Msg checkSession(HttpServletRequest request){
         // 找accessToken
