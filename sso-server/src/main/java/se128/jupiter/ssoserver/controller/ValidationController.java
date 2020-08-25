@@ -150,5 +150,6 @@ public class ValidationController {
         else{
             return MsgUtil.makeMsg(MsgCode.NOT_LOGGED_IN_ERROR);
         }
+        
     }
 }
