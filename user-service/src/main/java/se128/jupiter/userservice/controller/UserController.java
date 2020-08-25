@@ -51,6 +51,8 @@ public class UserController {
         userEntity.setBuy1(0);
         userEntity.setBuy2(0);
         userEntity.setBuy3(0);
+        userEntity.setBuy4(0);
+        userEntity.setBuy5(0);
         UserEntity user1 = userService.saveUser(userEntity);
 
         if (user1 != null) {
@@ -58,6 +60,12 @@ public class UserController {
         } else {
             return MsgUtil.makeMsg(MsgCode.REGISTER_USER_ERROR);
         }
+    }
+
+    @PostMapping("/login")
+    public Msg login(@RequestBody Map<String, String> params){
+
+        return null;
     }
 
     @RequestMapping("/editUser")
@@ -93,8 +101,7 @@ public class UserController {
     }
 
     @PatchMapping("/buyCount/{id}/{goodsType}")
-    public UserEntity addBuy(@PathVariable Integer id, @PathVariable Integer goodsType)
-    {
+    public UserEntity addBuy(@PathVariable Integer id, @PathVariable Integer goodsType) {
         logger.info("addView");
         return userService.addBuy(id,goodsType);
     }
@@ -106,14 +113,4 @@ public class UserController {
         String password = params.get("password");
         return userService.checkUser(username,password);
     }
-
-    @PostMapping("/changeUserStatusByUserId")
-    public UserEntity changeUserStatusByUserId(@RequestBody Map<String, String> params) {
-        Integer userId = Integer.valueOf(params.get("userId"));
-        logger.info("changeUserStatusByUserId = " + userId);
-        UserEntity user = userService.changeUserStatusByUserId(userId);
-        return user;
-    }
-
-
 }
