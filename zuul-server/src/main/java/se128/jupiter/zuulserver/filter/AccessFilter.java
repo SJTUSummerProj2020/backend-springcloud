@@ -63,6 +63,8 @@ public class AccessFilter extends ZuulFilter {
         // 过滤规则
         if (url.toString().contains("sso/login") ||
                 url.toString().contains("sso/checkSession") ||
+                url.toString().contains("goods/getAllGoods") ||
+                url.toString().contains("goods/getPopularGoods") ||
                 (!StringUtils.isEmpty(accessToken) && ssoFeign.hasKey(accessToken))){
             ctx.setSendZuulResponse(true);
             ctx.setResponseStatusCode(200);
