@@ -74,4 +74,13 @@ public class UserController {
         return userService.checkUser(username,password);
     }
 
+    @PostMapping("/changeUserStatusByUserId")
+    public UserEntity changeUserStatusByUserId(@RequestBody Map<String, String> params) {
+        Integer userId = Integer.valueOf(params.get("userId"));
+        logger.info("changeUserStatusByUserId = " + userId);
+        UserEntity user = userService.changeUserStatusByUserId(userId);
+        return user;
+    }
+
+
 }

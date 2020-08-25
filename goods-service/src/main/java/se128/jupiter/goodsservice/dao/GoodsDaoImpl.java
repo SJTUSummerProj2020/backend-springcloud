@@ -37,6 +37,16 @@ public class GoodsDaoImpl {
         return goods;
     }
 
+    public CGoodsDetail getGoodsDetailByDetailId(Integer detailId) {
+        CGoodsDetail detail;
+        try{
+            detail = goodsDetailRepository.getGoodsDetailByDetailId(detailId);
+        }catch(Exception e){
+            detail = null;
+        }
+        return detail;
+    }
+
     public CGoodEntity editGoods(CGoodEntity cGoodEntity) {
         CGoodEntity goods1 = goodRepository.getGoodsByGoodsId(cGoodEntity.getGoodsId());
         if(goods1 == null)
@@ -140,16 +150,6 @@ public class GoodsDaoImpl {
 
     public List<CGoodEntity> getRecommendGoodsInAll(Integer number) {
         return goodRepository.getRecommendGoodsInAll(number);
-    }
-
-    public CGoodsDetail getGoodsDetailByDetailId(Integer detailId) {
-        CGoodsDetail detail;
-        try{
-            detail = goodsDetailRepository.getGoodsDetailByDetailId(detailId);
-        }catch(Exception e){
-            detail = null;
-        }
-        return detail;
     }
 
     public CGoodEntity saveGoods(CGoodEntity cGoodEntity) {

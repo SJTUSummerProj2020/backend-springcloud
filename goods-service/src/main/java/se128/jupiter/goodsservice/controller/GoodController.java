@@ -1,5 +1,4 @@
 package se128.jupiter.goodsservice.controller;
-import com.netflix.discovery.converters.Auto;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.logging.log4j.LogManager;
@@ -38,20 +37,44 @@ public class GoodController {
     @Autowired
     private UserFeign userFeign;
 
-    @GetMapping("{id}")
-    public CGoodEntity getGood(@PathVariable Integer id) {
-        return goodService.getGood(id);
+    @PutMapping("/addGoods")
+    public Msg addGoods(@RequestBody CGoodEntity goods) {
+        logger.info("addGoods" + goods);
+        goods.setBuyCounter(0);
+        goods.setViewCounter(0);
+        CGoodEntity goods1 = goodService.addGoods(goods);
+        JSONObject data = JSONObject.fromObject(goods1);
+        return MsgUtil.makeMsg(MsgCode.ADD_SUCCESS, data);
+    }
+
+    @DeleteMapping(value = "/delete/{goodsId}")
+    public Msg deleteGoodsByGoodsId(@PathVariable Integer goodsId) {
+        logger.info("deleteGoodsWithGoodsId = " + goodsId);
+        goodService.deleteGoodsByGoodsId(goodsId);
+        return MsgUtil.makeMsg(MsgCode.DELETE_SUCCESS);
+    }
+
+    @GetMapping("/{goodsId}")
+    public Msg getGood(@PathVariable Integer goodsId) {
+        try {
+//            Integer goodsId = Integer.valueOf(params.get(Constant.GOODS_ID));
+            logger.info("getGoodsByGoodsId = " + goodsId);
+            CGoodEntity goods = goodService.getGood(goodsId);
+            if (goods.getGoodsType() < 0) {
+                return MsgUtil.makeMsg(MsgCode.DATA_ERROR, "商品已下架");
+            }
+            JSONObject data = JSONObject.fromObject(goods);
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        } catch (NumberFormatException e) {
+            return MsgUtil.makeMsg(MsgCode.DATA_ERROR);
+        } catch (NullPointerException e) {
+            return MsgUtil.makeMsg(MsgCode.DATA_ERROR, "No such goodsId");
+        }
     }
 
     @PostMapping
     public CGoodEntity saveGood(@RequestBody CGoodEntity cGoodEntity) {
         return goodService.saveGood(cGoodEntity);
-    }
-
-    @DeleteMapping("{id}")
-    public CGoodEntity deleteGoodsByGoodsId(@PathVariable Integer id) {
-        logger.info("deleteGoodsWithGoodsId = " + id);
-        return goodService.deleteGoodsByGoodsId(id);
     }
 
     @GetMapping(value="/search/{name}")
@@ -174,12 +197,14 @@ public class GoodController {
         Double addingPrice = Double.valueOf(params.get("addingPrice"));
         String startTime = params.get("startTime");
         Integer duration = Integer.valueOf(params.get("duration"));
+        auction.setGoods(goodService.getGood(goodsId));
         auction.setStartingPrice(startingPrice);
         auction.setAddingPrice(addingPrice);
         auction.setStartTime(startTime);
         auction.setDuration(duration);
         auction.setUserId(1);
         auction.setBestOffer(0.0);
+
         Auction auction1 = goodService.addAuction(auction, goodsId, detailId);
         JSONObject data = JSONObject.fromObject(auction1);
         return MsgUtil.makeMsg(MsgCode.ADD_SUCCESS, data);
@@ -187,7 +212,7 @@ public class GoodController {
 
     @DeleteMapping("/deleteAuctionByAuctionId/{auctionId}")
     public Msg deleteAuctionByAuctionId(@PathVariable Integer auctionId) {
-        logger.info("deleteAuctionByAuctionId");
+        logger.info("deleteAuctionByAuctionId" + auctionId) ;
         goodService.deleteAuctionByAuctionId(auctionId);
         return MsgUtil.makeMsg(MsgCode.DELETE_SUCCESS);
     }
@@ -216,13 +241,18 @@ public class GoodController {
 
     @GetMapping("/getAuctionByAuctionId/{AuctionId}")
     public Msg getAuctionByAuctionId(@PathVariable Integer AuctionId) {
-        logger.info("getAuctionByAuctionsId = " + AuctionId);
-        Auction auction = goodService.getAuctionByAuctionId(AuctionId);
-        if(auction == null){
-            return MsgUtil.makeMsg(MsgCode.DATA_ERROR, "No such auctionId");
+        try {
+//            Integer AuctionId = Integer.valueOf(params.get(Constant.AUCTION_ID));
+            logger.info("getAuctionByAuctionsId = " + AuctionId);
+            Auction auction = goodService.getAuctionByAuctionId(AuctionId);
+            if(auction == null){
+                return MsgUtil.makeMsg(MsgCode.DATA_ERROR, "No such auctionId");
+            }
+            JSONObject data = JSONObject.fromObject(auction);
+            return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
+        } catch (NumberFormatException e) {
+            return MsgUtil.makeMsg(MsgCode.DATA_ERROR);
         }
-        JSONObject data = JSONObject.fromObject(auction);
-        return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
 
     @PostMapping("/updateAuction")
@@ -257,8 +287,9 @@ public class GoodController {
     @PostMapping("/editAuction")
     public Msg editAuction(@RequestBody Map<String, String> params) {
         logger.info("editAuction");
-        Auction auction = new Auction();
+
         Integer auctionId = Integer.valueOf(params.get("auctionId"));
+        Auction auction = goodService.getAuctionByAuctionId(auctionId);
         Integer detailId = Integer.valueOf(params.get("detailId"));
         Integer goodsId = Integer.valueOf(params.get("goodsId"));
         Double startingPrice = Double.valueOf(params.get("startingPrice"));
