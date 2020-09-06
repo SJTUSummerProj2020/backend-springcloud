@@ -39,7 +39,7 @@ public class UserController {
         List<UserEntity> users = userService.getAllUsers();
         JSONObject data = new JSONObject();
         JSONArray userList = JSONArray.fromObject(users);
-        data.put("user", userList.toString());
+        data.put("users", userList.toString());
         return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
 

@@ -1,5 +1,6 @@
 package se128.jupiter.orderservice.controller;
 
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,9 +37,13 @@ public class OrderController {
         return orderService.getOrder(id);
     }
 
-    @GetMapping()
-    public List<COrderEntity> getAllOrder() {
-        return orderService.getAllOrder();
+    @GetMapping("/getAllOrders")
+    public Msg getAllOrder() {
+        List<COrderEntity> orders = orderService.getAllOrder();
+        JSONObject data = new JSONObject();
+        JSONArray orderList = JSONArray.fromObject(orders);
+        data.put("orders", orderList.toString());
+        return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
 
     @PutMapping("/addOrder")

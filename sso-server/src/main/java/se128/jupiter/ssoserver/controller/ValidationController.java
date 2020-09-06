@@ -46,7 +46,6 @@ public class ValidationController {
         return JSONObject.fromObject(jsonString);
     }
 
-
      /* 校验用户名密码，一般用于内部函数 */
     @RequestMapping("/login/{username}/{password}")
     public JSONObject checkUsernameAndPassword(@PathVariable("username") String username, @PathVariable("password") String password) {

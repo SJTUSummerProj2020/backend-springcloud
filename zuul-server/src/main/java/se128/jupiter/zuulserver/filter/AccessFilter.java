@@ -65,8 +65,17 @@ public class AccessFilter extends ZuulFilter {
 
         // 过滤规则
         // 不需要登录也能访问
-        if (url.toString().contains("sso/login") ||
-                url.toString().contains("sso/checkSession")){
+        if (
+                url.toString().contains("goods/getPopularGoods") ||
+                url.toString().contains("goods") ||
+                url.toString().contains("goods/search") ||
+                url.toString().contains("goods/getAllGoods") ||
+                url.toString().contains("goods/getRecommendGoods") ||
+                url.toString().contains("goods/getAllAuctions") ||
+                url.toString().contains("goods/getAuctionByAuctionId") ||
+                url.toString().contains("sso/login") ||
+                url.toString().contains("sso/checkSession")
+        ){
             ctx.setSendZuulResponse(true);
             ctx.setResponseStatusCode(200);
 
@@ -123,31 +132,6 @@ public class AccessFilter extends ZuulFilter {
             // send json back
             requestUtil.sendJsonBack(response);
         }
-
-//        String urlString = url.toString();
-//        System.out.println(urlString);
-//        if (url.toString().contains("sso/login") ||
-//                url.toString().contains("sso/checkSession") ||
-//                (!StringUtils.isEmpty(accessToken) && ssoFeign.hasKey(accessToken))){
-//            ctx.setSendZuulResponse(true);
-//            ctx.setResponseStatusCode(200);
-//
-//            System.out.println("INNNNNNNNNNNNN");
-//        }
-//        else{   // 拒绝访问
-//            // send json back
-//            requestUtil.sendJsonBack(response);
-////            Msg msg = MsgUtil.makeMsg(MsgCode.NOT_AVAILABLE);
-////            response.setCharacterEncoding("UTF-8");
-////            response.setContentType("application/json; charset=utf-8");
-////            try (PrintWriter writer = response.getWriter()){
-////                writer.print(JSONObject.fromObject(msg));
-////            }catch (IOException e){
-////                System.out.println("send json back error");
-////            }
-////
-////            System.out.println("OUTTTTTTTTTTTTTT");
-//        }
         return null;
     }
 }

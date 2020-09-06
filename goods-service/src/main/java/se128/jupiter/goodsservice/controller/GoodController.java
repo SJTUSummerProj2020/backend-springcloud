@@ -106,7 +106,7 @@ public class GoodController {
         logger.info("getPopularGoods");
 //        Integer number = Integer.valueOf(params.get(Constant.NUMBER));
         JSONObject data = new JSONObject();
-        for (int goodsType = -1; goodsType < 5; goodsType++) {
+        for (int goodsType = -1; goodsType < 6; goodsType++) {
             List<CGoodEntity> goods = goodService.getPopularGoods(number, goodsType);
             JSONArray goodsList = JSONArray.fromObject(goods);
             if (goodsType == -1) {

@@ -8,6 +8,6 @@ import se128.jupiter.goodsservice.dto.UserDto;
 
 @FeignClient(name="user-service")
 public interface UserFeign {
-    @GetMapping("{id}")
+    @GetMapping("/getUserById/{id}")
     UserDto getUser(@PathVariable Integer id);
 }
