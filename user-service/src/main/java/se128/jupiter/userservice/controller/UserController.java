@@ -26,7 +26,7 @@ public class UserController {
     private static final Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     @GetMapping("/getUserById/{id}")
-    public Msg getUser(@PathVariable Integer id){
+    public Msg getUser(@PathVariable Integer id) {
         logger.info("getUserById: "+ id);
         UserEntity userEntity = userService.getUser(id);
         JSONObject data = JSONObject.fromObject(userEntity);
@@ -111,5 +111,11 @@ public class UserController {
         String username = params.get("username");
         String password = params.get("password");
         return userService.checkUser(username,password);
+    }
+
+    // 以下接口供其他微服务使用
+    @RequestMapping("/getUserById1/{userId}")
+    public UserEntity getUserById1(@PathVariable Integer userId){
+        return userService.getUser(userId);
     }
 }

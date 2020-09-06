@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import se128.jupiter.goodsservice.dto.UserDto;
 import se128.jupiter.goodsservice.entity.Auction;
 import se128.jupiter.goodsservice.entity.CGoodEntity;
+import se128.jupiter.goodsservice.entity.CGoodsDetail;
 import se128.jupiter.goodsservice.msgutils.Msg;
 import se128.jupiter.goodsservice.msgutils.MsgCode;
 import se128.jupiter.goodsservice.msgutils.MsgUtil;
@@ -118,7 +119,6 @@ public class GoodController {
     }
 
     @GetMapping("/getRecommendGoods/{number}")
-
     public Msg getRecommendGoods(HttpServletRequest request, @PathVariable Integer number) {
         // 找accessToken
         String accessToken  = "";
@@ -308,5 +308,19 @@ public class GoodController {
         return MsgUtil.makeMsg(MsgCode.EDIT_SUCCESS, data);
     }
 
+    // 以下接口供其他微服务使用
+    @RequestMapping("/getGoodsDetailByDetailId/{detailId}")
+    public CGoodsDetail getGoodsDetailByDetailId(@PathVariable Integer detailId){
+        return goodService.getGoodsDetailByDetailId(detailId);
+    }
 
+    @RequestMapping("/getGoodsByGoodsId/{goodsId}")
+    public CGoodEntity getGoodsByGoodsId(@PathVariable Integer goodsId){
+        return goodService.getGood(goodsId);
+    }
+
+    @RequestMapping("/updateGoodsCount/{goodsId}/{number}")
+    public CGoodEntity updateGoodsCount(@PathVariable Integer goodsId, @PathVariable Integer number){
+        return goodService.updateGoodsCount(goodsId, number);
+    }
 }

@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 
 @Data
 @Entity
-@Table(name = "c_order")
+@Table(name = "orderlist")
 @EntityListeners(AuditingEntityListener.class)
 public class COrderEntity {
     private Integer orderId;

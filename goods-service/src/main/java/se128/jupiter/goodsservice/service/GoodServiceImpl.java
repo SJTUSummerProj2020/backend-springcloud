@@ -129,5 +129,13 @@ public class GoodServiceImpl {
         return auctionDao.addAuction(auction);
     }
 
+    public CGoodsDetail getGoodsDetailByDetailId(Integer detailId){
+        return goodsDao.getGoodsDetailByDetailId(detailId);
+    }
 
+    public CGoodEntity updateGoodsCount(Integer goodsId, Integer number){
+        CGoodEntity goods = goodsDao.getGoodsByGoodsId(goodsId);
+        goods.setBuyCounter(goods.getBuyCounter() + number);
+        return goodsDao.saveGoods(goods);
+    }
 }

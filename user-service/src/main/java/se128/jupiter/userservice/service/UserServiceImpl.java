@@ -1,5 +1,6 @@
 package se128.jupiter.userservice.service;
 
+import org.apache.catalina.User;
 import se128.jupiter.userservice.entity.UserEntity;
 import se128.jupiter.userservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,6 +64,22 @@ public class UserServiceImpl {
             user.get().setNickname(userEntity.getNickname());
             user.get().setPhone(userEntity.getPhone());
             user.get().setPassword(userEntity.getPassword());
+            return userRepository.saveAndFlush(user.get());
+        }
+        else {
+            return null;
+        }
+    }
+
+    public UserEntity updateBuyCount(UserEntity userEntity){
+        Optional<UserEntity> user = userRepository.findById(userEntity.getUserId());
+        if(user.isPresent()) {
+            user.get().setBuy0(userEntity.getBuy0());
+            user.get().setBuy1(userEntity.getBuy1());
+            user.get().setBuy2(userEntity.getBuy2());
+            user.get().setBuy3(userEntity.getBuy3());
+            user.get().setBuy4(userEntity.getBuy4());
+            user.get().setBuy5(userEntity.getBuy5());
             return userRepository.saveAndFlush(user.get());
         }
         else {

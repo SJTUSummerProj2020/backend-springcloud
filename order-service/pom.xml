@@ -63,6 +63,15 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
-
+        <!-- feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <!-- Required to use PATCH -->
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+        </dependency>
     </dependencies>
 </project>
