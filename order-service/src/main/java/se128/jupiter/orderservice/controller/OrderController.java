@@ -91,9 +91,13 @@ public class OrderController {
 
     }
 
-    @GetMapping("userOrderList/{userId}")
-    public List<COrderEntity> getOrderListByUser(@PathVariable Integer userId){
-        return orderService.getOrderListByUser(userId);
+    @GetMapping("getOrdersByUserId/{userId}")
+    public Msg getOrderListByUser(@PathVariable Integer userId){
+        List<COrderEntity> orders = orderService.getOrderListByUser(userId);
+        JSONArray orderList = JSONArray.fromObject(orders);
+        JSONObject data = new JSONObject();
+        data.put("order", orderList);
+        return MsgUtil.makeMsg(MsgCode.DATA_SUCCESS, data);
     }
 
     @Value("${envName}")
