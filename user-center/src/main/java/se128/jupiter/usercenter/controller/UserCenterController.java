@@ -48,7 +48,7 @@ public class UserCenterController {
 
     @GetMapping("userOrderList/{userId}")
     public Msg getUserOrderList(@PathVariable Integer userId){
-        List<OrderDto> orderDtoList=orderService.getUserOrderList(userId);
+        List<OrderDto> orderDtoList = orderService.getUserOrderList(userId);
         JSONArray orderList = JSONArray.fromObject(orderDtoList);
         JSONObject data = new JSONObject();
         data.put("order", orderList);

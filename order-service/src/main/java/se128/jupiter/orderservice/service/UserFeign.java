@@ -8,6 +8,7 @@ import se128.jupiter.orderservice.utils.msgutils.Msg;
 
 @FeignClient(name="user-service")
 public interface UserFeign {
+
     @RequestMapping("/getUserById1/{userId}")
     UserDto getUserById1(@PathVariable Integer userId);
 
